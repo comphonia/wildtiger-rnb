@@ -1,20 +1,54 @@
+html,
+body,.underlay {
+    width: 100%;
+    height: 100%;
+}
 
 /* NAV BAR */
-.mynav{
-    background-image:  url(anise-aroma.jpg);
+.mynav {
+    background-image: url(anise-aroma.jpg);
     background-size: cover;
     background-position: center center;
     position: relative;
     top: 0;
     bottom: 0;
-    height: 100vh;
     /* z-index: -100; */
 }
 
-.navbar{
+.navbar {
     background-color: transparent !important;
 }
-.textthai{
-    font-family: sans-serif;
 
+.textthai {
+    font-family: sans-serif;
+}
+
+.underlay{
+    background-color: rgba(238, 238, 238, 0.02);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -100;
+
+}
+
+.body-bg,
+.main {
+    background-image: url(assets/images/body-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    padding: 30px;
+}
+
+.body-bg{padding: 130px 150px; }
+
+.main {
+    height: 100vh;
+    box-shadow: 0px 0px 67px 8px rgba(0,0,0,0.75);
+}
+
+.header-text{
+    margin-top: 20%;
 }
