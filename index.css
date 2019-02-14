@@ -1,20 +1,34 @@
-html, body, .underlay {
+/* INSERTING THE FONT STYLES */
+
+@font-face {
+    font-family: Salamander;
+    src: url(Salamander/Salamander.woff);
+}
+
+@font-face {
+    font-family: Hipster;
+    src: url(Hipster/Hipster.otf);
+}
+
+html,
+body {
+    width: 100%;
+    height: auto;
+    color: whitesmoke;
+    font-size: 1em;
+}
+
+section {
+margin: 30px;
+}
+
+.underlay {
     width: 100%;
     height: 100%;
+
 }
 
 /* NAV BAR */
-
-.mynav {
-    background-image: url(anise-aroma.jpg);
-    background-size: cover;
-    background-position: center center;
-    position: relative;
-    top: 0;
-    bottom: 0;
-    /* z-index: -100; */
-}
-
 .navbar {
     background-color: transparent !important;
 }
@@ -24,14 +38,15 @@ html, body, .underlay {
 }
 
 .underlay {
-    background-color: rgba(238, 238, 238, 0.02);
+    background-color: rgba(238, 238, 238, 0.09);
     position: fixed;
     left: 0;
     top: 0;
     z-index: -100;
 }
 
-.body-bg, .main {
+.body-bg,
+.main {
     background-image: url(assets/images/body-bg.jpg);
     background-position: center;
     background-size: cover;
@@ -45,7 +60,7 @@ html, body, .underlay {
 }
 
 .main {
-    height: 100vh;
+    height: 100%;
     box-shadow: 0px 0px 67px 8px rgba(0, 0, 0, 0.75);
 }
 
@@ -53,21 +68,142 @@ html, body, .underlay {
     margin-top: 20%;
 }
 
-/* INSERTING THE FONT STYLES */
-
-@font-face {
-    font-family: Salamander;
-    src: url(Salamander/Salamander.woff);
-}
-
-@font-face {
-    font-family: Hipster;
-    src: url(Hipster/Hipster.otf);
-}
-
-.style1 {
+.sal-header {
     font-family: Hipster;
     font-weight: bold;
     font-size: 3rem;
-    margin-top: 20px;
+}
+
+.book-btn {
+    border-radius: unset;
+
+    font-weight: bold;
+    letter-spacing: 0.09rem;
+    border-color: #aca895;
+    border: 2px solid;
+    margin-top: 1rem;
+}
+
+.reservation-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /*    border-color: #aca895;*/
+}
+
+.fit-bottom {
+    object-position: bottom;
+}
+
+.reservation {
+    height: 300px;
+        background-color: #1F1E1A;
+     transition: .3s ease-in-out;
+}
+
+
+.specialty-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sp-img,.res-img {
+    transition: .3s ease-in-out;
+}
+
+.sp-img:hover,.res-img:hover {
+    opacity: 0.7;
+
+}
+
+.specialty-desc:hover + .sp-img, .reservation-desc:hover + .res-img {
+    opacity: 0.7;
+}
+
+
+.specialty-title {
+    text-transform: capitalize;
+    font-size: 2em;
+    font-family: Salamander;
+}
+
+.card-price {
+    font-size: 1.2em;
+    font-weight: 700;
+
+}
+
+.specialty-desc {
+    padding: 20px;
+    font-size: 1em;
+    width: 100%;
+    height: 100%;
+}
+
+.specialty-card {
+    width: 100%;
+    height: 100%;
+    word-wrap: break-word;
+    overflow-y: hidden;
+        background-color: #1F1E1A;
+    transition: .3s ease-in-out;
+}
+
+.specialty-card:hover,.reservation:hover{
+    background: #f6c710;
+    opacity: 1;
+    color: #444;
+    cursor: pointer;
+}
+
+.specialty-banner{
+    font-family: Salamander;
+    text-transform:capitalize;
+    font-size: 5em;
+    padding: 150px;
+    margin: -30px;
+        background-color: rgba(0,0,0, 0.6);
+}
+
+
+/*Media Queries*/
+@media only screen and (max-width: 1440px) {
+    .body-bg {
+        padding: 80px;
+    }
+}
+
+@media only screen and (max-width: 1240px) {
+    .body-bg {
+        padding: 50px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .specialty-title {
+        font-size: 1.5em;
+    }
+    
+    .specialty-banner{padding: 50px; margin: 0, -10px}
+
+    .specialty-card,.reservation {
+        height: 50%;
+        font-size: 1.0em;
+        margin-bottom: 5px;
+        border: solid 2px darkred;
+    }
+
+    .sp-img,.res-img {
+        display: none
+    }
+}
+
+@media only screen and (max-width: 734px) {
+
+    .body-bg,
+    .main {
+        padding: 10px;
+    }
+
 }

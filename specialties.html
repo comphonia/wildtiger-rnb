@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
     <style>
-        #specialties {}
+        body {
+            color: #666
+        }
 
         .specialty-img {
             width: 100%;
@@ -18,16 +20,28 @@
             object-fit: cover;
         }
 
+        .sp-img {
+            transition: .3s ease-in-out;
+        }
+
+        .sp-img:hover {
+            opacity: 0.7;
+
+        }
+
+        .specialty-desc:hover+.sp-img {
+            opacity: 0.7;
+        }
+
         .upper {
             text-transform: uppercase;
             font-weight: 700;
-            color: #565656;
         }
 
         .card-price {
             font-size: 1.2em;
             font-weight: 700;
-            color: #AF916B
+
         }
 
         .specialty-card {
@@ -36,6 +50,14 @@
             background-color: #fff;
             word-wrap: break-word;
             overflow-y: hidden;
+            transition: .3s ease-in-out;
+        }
+
+        .specialty-card:hover {
+            background: #f6c710;
+            opacity: 1;
+            color: #444;
+            cursor: pointer;
         }
     </style>
     <title>Hello, world!</title>
@@ -47,58 +69,56 @@
     <div class="container">
         <div class="">
             <div class="row">
-                <div class="col-sm-6 specialty-card">
-                    <div class="row" id="">
-                        <div class="col-6 text-center p-4">
+                <div class="col-lg-6 specialty-card">
+                    <div class="row">
+                        <div class="col-6 text-center p-4 specialty-desc">
                             <div class="h4 upper">Sushi</div>
-                            <div class="my-3 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, quisquam.</div>
+                            <div class="my-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, quisquam.</div>
                             <div class="card-price ">$12.50</div>
                         </div>
-                        <div class="col-6 p-0">
+                        <div class="col-6 p-0 sp-img">
                             <img src="assets/images/sushi.jpg" class="specialty-img">
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 specialty-card">
+                <div class="col-lg-6 specialty-card">
                     <div class="row" id="">
-                        <div class="col-6 text-center p-4">
+                        <div class="col-6 text-center p-4 specialty-desc">
                             <div class="h4 upper">Sushi</div>
-                            <div class="my-3 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, quisquam.</div>
+                            <div class="my-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, quisquam.</div>
                             <div class="card-price ">$12.50</div>
                         </div>
-                        <div class="col-6 p-0">
+                        <div class="col-6 p-0 sp-img">
                             <img src="assets/images/sushi.jpg" class="specialty-img">
                         </div>
                     </div>
                 </div>
-
             </div>
             <div class="row">
-                <div class="col-sm-6 specialty-card">
-                    <div class="row" id="">
-                        <div class="col-6 p-0">
-                            <img src="assets/images/sushi.jpg" class="specialty-img">
-                        </div>
-                        <div class="col-6 text-center p-4">
+                <div class="col-lg-6 specialty-card">
+                    <div class="row">
+                        <div class="col-6 text-center p-4 specialty-desc order-2">
                             <div class="h4 upper">Sushi</div>
-                            <div class="my-3 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, quisquam.</div>
+                            <div class="my-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, quisquam.</div>
                             <div class="card-price ">$12.50</div>
+                        </div>
+                        <div class="col-6 p-0 sp-img">
+                            <img src="assets/images/sushi.jpg" class="specialty-img">
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 specialty-card">
-                    <div class="row" id="">
-                        <div class="col-6 p-0">
-                            <img src="assets/images/sushi.jpg" class="specialty-img">
-                        </div>
-                        <div class="col-6 text-center p-4">
+                <div class="col-lg-6 specialty-card">
+                    <div class="row " id="">
+                        <div class="col-6 text-center p-4 specialty-desc order-2">
                             <div class="h4 upper">Sushi</div>
-                            <div class="my-3 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, quisquam.</div>
+                            <div class="my-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, quisquam.</div>
                             <div class="card-price ">$12.50</div>
+                        </div>
+                        <div class="col-6 p-0 sp-img">
+                            <img src="assets/images/sushi.jpg" class="specialty-img">
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
