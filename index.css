@@ -33,6 +33,8 @@ margin: 30px;
     background-color: transparent !important;
 }
 
+.navbar-toggler-icon{color: aliceblue}
+
 .textthai {
     font-family: sans-serif;
 }
@@ -185,7 +187,7 @@ margin: 30px;
         font-size: 1.5em;
     }
     
-    .specialty-banner{padding: 50px; margin: 0, -10px}
+    .specialty-banner{padding: 50px; margin:-30px -10px;}
 
     .specialty-card,.reservation {
         height: 50%;
