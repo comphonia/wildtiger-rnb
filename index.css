@@ -19,7 +19,7 @@ body {
 }
 
 section {
-margin: 30px;
+    margin: 30px;
 }
 
 .underlay {
@@ -33,7 +33,9 @@ margin: 30px;
     background-color: transparent !important;
 }
 
-.navbar-toggler-icon{color: aliceblue}
+.navbar-toggler-icon {
+    color: aliceblue
+}
 
 .textthai {
     font-family: sans-serif;
@@ -88,9 +90,8 @@ margin: 30px;
 
 .reservation-img {
     width: 100%;
-    height: 100%;
+    height: 300px;
     object-fit: cover;
-    /*    border-color: #aca895;*/
 }
 
 .fit-bottom {
@@ -99,8 +100,9 @@ margin: 30px;
 
 .reservation {
     height: 300px;
-        background-color: #1F1E1A;
-     transition: .3s ease-in-out;
+    background-color: #1F1E1A;
+    transition: .3s ease-in-out;
+    overflow-y: hidden;
 }
 
 
@@ -110,16 +112,19 @@ margin: 30px;
     object-fit: cover;
 }
 
-.sp-img,.res-img {
+.sp-img,
+.res-img {
     transition: .3s ease-in-out;
 }
 
-.sp-img:hover,.res-img:hover {
+.sp-img:hover,
+.res-img:hover {
     opacity: 0.7;
 
 }
 
-.specialty-desc:hover + .sp-img, .reservation-desc:hover + .res-img {
+.specialty-desc:hover + .sp-img,
+.reservation-desc:hover + .res-img {
     opacity: 0.7;
 }
 
@@ -148,24 +153,25 @@ margin: 30px;
     height: 100%;
     word-wrap: break-word;
     overflow-y: hidden;
-        background-color: #1F1E1A;
+    background-color: #1F1E1A;
     transition: .3s ease-in-out;
 }
 
-.specialty-card:hover,.reservation:hover{
+.specialty-card:hover,
+.reservation:hover {
     background: #f6c710;
     opacity: 1;
     color: #444;
     cursor: pointer;
 }
 
-.specialty-banner{
+.specialty-banner {
     font-family: Salamander;
-    text-transform:capitalize;
+    text-transform: capitalize;
     font-size: 5em;
     padding: 150px;
     margin: -30px;
-        background-color: rgba(0,0,0, 0.6);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 
@@ -186,17 +192,22 @@ margin: 30px;
     .specialty-title {
         font-size: 1.5em;
     }
-    
-    .specialty-banner{padding: 50px; margin:-30px -10px;}
 
-    .specialty-card,.reservation {
+    .specialty-banner {
+        padding: 50px;
+        margin: -30px -10px;
+    }
+
+    .specialty-card,
+    .reservation {
         height: 50%;
         font-size: 1.0em;
         margin-bottom: 5px;
         border: solid 2px darkred;
     }
 
-    .sp-img,.res-img {
+    .sp-img,
+    .res-img {
         display: none
     }
 }
