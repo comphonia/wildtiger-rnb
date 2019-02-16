@@ -1,0 +1,289 @@
+/* INSERTING THE FONT STYLES */
+
+@font-face {
+    font-family: Salamander;
+    src: url(/assets/Salamander/Salamander.woff);
+}
+
+@font-face {
+    font-family: Hipster;
+    src: url(/assets/Hipster/Hipster.otf);
+}
+
+html,
+body {
+    width: 100%;
+    height: auto;
+    color: whitesmoke;
+    font-size: 1em;
+}
+
+section {
+    margin: 30px;
+}
+
+.underlay {
+    width: 100%;
+    height: 100%;
+
+}
+
+/* NAV BAR */
+.navbar {
+    background-color: transparent !important;
+}
+
+.navbar-toggler-icon {
+    color: aliceblue
+}
+
+.textthai {
+    font-family: sans-serif;
+}
+
+.underlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -100;
+}
+
+.body-bg,
+.main {
+    background-image: url('/assets/images/body-bg2-low.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    padding: 30px;
+}
+
+.body-bg {
+    padding: 130px 150px;
+}
+
+.main {
+    height: 100%;
+    box-shadow: 0px 0px 67px 8px rgba(0, 0, 0, 0.75);
+}
+
+.header-text {
+    margin-top: 20%;
+}
+
+.sal-header {
+    font-family: Hipster;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+/*Reservation*/
+
+.book-btn {
+    border-radius: unset;
+    font-weight: bold;
+    letter-spacing: 0.09rem;
+    border-color: #aca895;
+    border: 2px solid;
+    margin-top: 1rem;
+}
+
+.reservation-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.fit-bottom {
+    object-position: bottom;
+}
+
+.reservation {
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.85);
+    background-image: url("https://www.transparenttextures.com/patterns/little-knobs.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    transition: .3s ease-in-out;
+    overflow-y: hidden;
+}
+
+/*Specialty*/
+
+.specialty-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sp-img,
+.res-img {
+    transition: .3s ease-in-out;
+}
+
+.sp-img:hover,
+.res-img:hover {
+    opacity: 0.7;
+
+}
+
+.specialty-desc:hover + .sp-img,
+.reservation-desc:hover + .res-img {
+    opacity: 0.7;
+}
+
+
+.specialty-title {
+    text-transform: capitalize;
+    font-size: 2em;
+    font-family: Salamander;
+}
+
+.card-price {
+    font-size: 1.2em;
+    font-weight: 700;
+
+}
+
+.specialty-desc {
+    padding: 20px;
+    font-size: 1em;
+    width: 100%;
+    height: 100%;
+}
+
+.specialty-card {
+    width: 100%;
+    height: 100%;
+    word-wrap: break-word;
+    overflow-y: hidden;
+    background-color: rgba(0, 0, 0, 0.95);
+    background-image: url("https://www.transparenttextures.com/patterns/little-knobs.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    transition: .3s ease-in-out;
+}
+
+.specialty-card:hover,
+.reservation:hover {
+    background: #f6c710;
+    opacity: 1;
+    color: #444;
+    cursor: pointer;
+}
+
+.specialty-banner {
+    font-family: Salamander;
+    text-transform: capitalize;
+    font-size: 5em;
+    padding: 150px;
+    margin: -30px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/*Menu*/
+
+.btn-outline-danger.active{  box-shadow: 0 0 0 0.2rem rgba(220,53,69,.5);}
+#menu-area {
+    background-color: rgba(0, 0, 0, 1);
+    background-image: url("https://www.transparenttextures.com/patterns/little-knobs.png");
+}
+
+.money {
+    font-family: Salamander;
+    font-size: 3.5rem;
+    margin-left: 0;
+    margin-right: 0;
+    color: rgb(212, 214, 64);
+}
+
+.col-1 {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;
+}
+
+.item {
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 2px;
+    font-size: 1.3rem;
+}
+
+/* Paragraph tag  */
+
+.itemp {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 0px;
+    color: #a39f97a4
+}
+
+/* menu sign */
+
+.custommenu {
+    font-family: 'Satisfy', cursive;
+    font-size: 5rem;
+    font-weight: 200;
+    color: #110e0e;
+}
+
+.customp {
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: hsl(0, 2%, 74%);
+    padding: 40px;
+}
+
+.custommenu:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 10%;
+    border-bottom: 3px solid rgb(180, 169, 110);
+}
+
+
+/*Media Queries*/
+@media only screen and (max-width: 1440px) {
+    .body-bg {
+        padding: 80px;
+    }
+}
+
+@media only screen and (max-width: 1240px) {
+    .body-bg {
+        padding: 50px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .specialty-title {
+        font-size: 1.5em;
+    }
+
+    .specialty-banner {
+        padding: 50px;
+        margin: -30px -10px;
+    }
+
+    .specialty-card,
+    .reservation {
+        height: 50%;
+        font-size: 1.0em;
+        margin-bottom: 5px;
+        border: solid 2px darkred;
+    }
+
+    .sp-img,
+    .res-img {
+        display: none
+    }
+}
+
+@media only screen and (max-width: 734px) {
+
+    .body-bg,
+    .main {
+        padding: 10px;
+    }
+
+}
