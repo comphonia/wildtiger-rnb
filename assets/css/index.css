@@ -1,3 +1,5 @@
+/* NAV BAR */
+
 /* INSERTING THE FONT STYLES */
 
 @font-face {
@@ -10,19 +12,34 @@
     src: url(../Hipster/Hipster.otf);
 }
 
-html,
-body {
+html, body {
     width: 100%;
     height: auto;
     color: whitesmoke;
     font-size: 1em;
 }
 
+.main_header {
+    font-family: Hipster;
+    font-size: 5rem;
+    color: rgb(236, 0, 0);
+}
+.danger{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
+    color: rgb(255, 230, 0);
+    font-weight: bold
+}
 
 .jumboheader {
-    font-size: 5em;
     width: 100%;
     height: 80vh;
+    text-transform: uppercase;
+    background-image: url(../images/pexels-photo.jpeg);
+    background-attachment: fixed;
+    background-position: 20%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .res-container {
@@ -37,11 +54,12 @@ body {
     height: 530px;
 }
 
-.sp-container,.res-container{
-  width: 80%; 
+.sp-container, .res-container {
+    width: 80%;
     margin: 0 auto;
-        transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
 }
+
 .sp-container {
     position: relative;
     top: -8%;
@@ -55,9 +73,17 @@ body {
 }
 
 .menu-underlay {
-    background-color: gainsboro;
     width: 100%;
-    height: 700px;
+    height: 550px;
+    background-image: url(../images/rawpixel-247358-unsplash.jpg);
+    width: 100%;
+    background-attachment: fixed;
+    background-position: 20%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 940px;
+    top: -450px;
+    margin: 0;
 }
 
 .underlay {
@@ -94,8 +120,7 @@ specialty {
     z-index: -100;
 }
 
-.body-bg,
-.main {
+.body-bg, .main {
     background-color: #666;
     background-image: url('/assets/images/body-bg2-low.jpg');
     background-position: center;
@@ -163,18 +188,15 @@ specialty {
     object-fit: cover;
 }
 
-.sp-img,
-.res-img {
+.sp-img, .res-img {
     transition: .3s ease-in-out;
 }
 
-.sp-img:hover,
-.res-img:hover {
+.sp-img:hover, .res-img:hover {
     opacity: 0.7;
 }
 
-.specialty-desc:hover + .sp-img,
-.reservation-desc:hover + .res-img {
+.specialty-desc:hover+.sp-img, .reservation-desc:hover+.res-img {
     opacity: 0.7;
 }
 
@@ -207,8 +229,7 @@ specialty {
     transition: .3s ease-in-out;
 }
 
-.specialty-card:hover,
-.reservation:hover {
+.specialty-card:hover, .reservation:hover {
     background-color: #f6c710;
     opacity: 1;
     color: #444;
@@ -314,63 +335,48 @@ specialty {
     .hide-em {
         display: none
     }
-
-    .sp-underlay,
-    .res-underlay {
+    .sp-underlay, .res-underlay {
         background-color: transparent
     }
-
     .specialty-title {
         font-size: 1.5em;
     }
-
     .specialty-banner {
         padding: 50px;
     }
-
-    .specialty-card,
-    .reservation {
+    .specialty-card, .reservation {
         height: 50%;
         font-size: 1.0em;
         margin-bottom: 5px;
         border: solid 2px darkred;
     }
-
     .res-container {
         top: 11%;
     }
-    
-    .sp-container,.res-container{
-  width: 100%; 
-    margin: 0 auto;
-}
-
-    .sp-img,
-    .res-img {
+    .sp-container, .res-container {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .sp-img, .res-img {
         display: none;
     }
-
     .body-bg {
         padding: 0px;
     }
-
     .main {}
-
     #menu-area {
         position: relative;
         top: 140px;
     }
-
     .jumboheader {
         font-size: em;
         width: 100%;
         height: 50vh;
     }
-
 }
 
 @media only screen and (max-width: 602px) {
-        #menu-area {
+    #menu-area {
         position: relative;
         top: 240px;
     }
