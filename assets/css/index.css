@@ -384,7 +384,7 @@ specialty {
         margin-bottom: 5px;
         border: solid 2px darkred;
     }
-    
+
     .specialty-card:hover{color: transparent}
     .specialty-overlay-container{display: block;}
 
