@@ -222,6 +222,8 @@ specialty {
 #menu-area {
     color: #665;
     background-color: #FEFEFE;
+    padding-right: 0px;
+    padding-left: 1px;
 }
 
 .money {
