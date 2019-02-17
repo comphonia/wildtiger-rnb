@@ -2,16 +2,15 @@
 
 @font-face {
     font-family: Salamander;
-    src: url(/assets/Salamander/Salamander.woff);
+    src: url(../Salamander/Salamander.woff);
 }
 
 @font-face {
     font-family: Hipster;
-    src: url(/assets/Hipster/Hipster.otf);
+    src: url(../Hipster/Hipster.otf);
 }
 
-html,
-body {
+html, body {
     width: 100%;
     height: auto;
     color: whitesmoke;
@@ -22,13 +21,46 @@ section {
     margin: 30px;
 }
 
+.jumboheader {
+    width: 100%;
+    height: 80vh;
+}
+
+.res-container {
+    position: relative;
+    top: -578px;
+    z-index: 10;
+}
+
+.res-underlay {
+    background-color: #F5F3F0;
+    width: 100%;
+    height: 500px;
+}
+
+.sp-container {
+    position: relative;
+    top: -495px;
+}
+
+.sp-underlay {
+    background-color: #F5F3F0;
+    width: 100%;
+    height: 430px;
+}
+
 .underlay {
     width: 100%;
     height: 100%;
+}
 
+specialty {
+    position: relative;
+    top: -660px;
 }
 
 /* NAV BAR */
+
 .navbar {
     background-color: transparent !important;
 }
@@ -49,14 +81,14 @@ section {
     z-index: -100;
 }
 
-.body-bg,
-.main {
+.body-bg, .main {
+    background-color: #666;
     background-image: url('/assets/images/body-bg2-low.jpg');
     background-position: center;
-    background-size: cover;
+    background-size: auto;
     background-repeat: no-repeat;
-    border-radius: 5px;
     padding: 30px;
+    position: relative;
 }
 
 .body-bg {
@@ -65,6 +97,7 @@ section {
 
 .main {
     height: 100%;
+    padding: 0;
     box-shadow: 0px 0px 67px 8px rgba(0, 0, 0, 0.75);
 }
 
@@ -82,6 +115,7 @@ section {
 
 .book-btn {
     border-radius: unset;
+    color: hsla(22, 79%, 53%, 0.451);
     font-weight: bold;
     letter-spacing: 0.09rem;
     border-color: #aca895;
@@ -100,11 +134,9 @@ section {
 }
 
 .reservation {
+    color: #445;
     height: 300px;
-    background-color: rgba(0, 0, 0, 0.85);
-    background-image: url("https://www.transparenttextures.com/patterns/little-knobs.png");
-    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    background-color: #FEFEFE;
     transition: .3s ease-in-out;
     overflow-y: hidden;
 }
@@ -113,26 +145,21 @@ section {
 
 .specialty-img {
     width: 100%;
-    height: 100%;
+    height: 250px;
     object-fit: cover;
 }
 
-.sp-img,
-.res-img {
+.sp-img, .res-img {
     transition: .3s ease-in-out;
 }
 
-.sp-img:hover,
-.res-img:hover {
-    opacity: 0.7;
-
-}
-
-.specialty-desc:hover + .sp-img,
-.reservation-desc:hover + .res-img {
+.sp-img:hover, .res-img:hover {
     opacity: 0.7;
 }
 
+.specialty-desc:hover+.sp-img, .reservation-desc:hover+.res-img {
+    opacity: 0.7;
+}
 
 .specialty-title {
     text-transform: capitalize;
@@ -143,7 +170,6 @@ section {
 .card-price {
     font-size: 1.2em;
     font-weight: 700;
-
 }
 
 .specialty-desc {
@@ -151,49 +177,56 @@ section {
     font-size: 1em;
     width: 100%;
     height: 100%;
+    margin: auto;
 }
 
 .specialty-card {
+    color: #445;
     width: 100%;
-    height: 100%;
+    height: 250px;
     word-wrap: break-word;
     overflow-y: hidden;
-    background-color: rgba(0, 0, 0, 0.95);
-    background-image: url("https://www.transparenttextures.com/patterns/little-knobs.png");
-    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    background-color: #FEFEFE;
     transition: .3s ease-in-out;
 }
 
-.specialty-card:hover,
-.reservation:hover {
-    background: #f6c710;
+.specialty-card:hover, .reservation:hover {
+    background-color: #f6c710;
     opacity: 1;
     color: #444;
     cursor: pointer;
 }
 
 .specialty-banner {
-    font-family: Salamander;
-    text-transform: capitalize;
-    font-size: 5em;
-    padding: 150px;
-    margin: -30px;
+    text-transform: uppercase;
+    font-size: 3em;
+    height: 500px;
+    background-image: url(../images/buffet-business-counter-776538.jpg);
+    width: 100%;
+    background-attachment: fixed;
+    background-position: 20%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 940px;
+    top: -450px;
+    margin: 0;
     background-color: rgba(0, 0, 0, 0.6);
 }
 
 /*Menu*/
 
-.btn-outline-danger.active{  box-shadow: 0 0 0 0.2rem rgba(220,53,69,.5);}
+.btn-outline-danger.active {
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, .5);
+}
+
 #menu-area {
-    background-color: rgba(0, 0, 0, 1);
-    background-image: url("https://www.transparenttextures.com/patterns/little-knobs.png");
+    color: #665;
+    background-color: #FEFEFE;
 }
 
 .money {
     font-family: Salamander;
-    font-size: 3.5rem;
-    margin-left: 0;
-    margin-right: 0;
+    font-size: 40px;
     color: rgb(212, 214, 64);
 }
 
@@ -207,6 +240,7 @@ section {
     font-family: 'Staatliches', cursive;
     letter-spacing: 2px;
     font-size: 1.3rem;
+    color: #000000;
 }
 
 /* Paragraph tag  */
@@ -214,7 +248,7 @@ section {
 .itemp {
     font-family: Georgia, 'Times New Roman', Times, serif;
     letter-spacing: 0px;
-    color: #a39f97a4
+    color: #000000a4
 }
 
 /* menu sign */
@@ -227,10 +261,11 @@ section {
 }
 
 .customp {
-    font-size: 30px;
+    font-size: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: hsl(0, 2%, 74%);
+    color: rgb(184, 180, 180);
     padding: 40px;
+    font-weight: bold
 }
 
 .custommenu:after {
@@ -241,8 +276,8 @@ section {
     border-bottom: 3px solid rgb(180, 169, 110);
 }
 
-
 /*Media Queries*/
+
 @media only screen and (max-width: 1440px) {
     .body-bg {
         padding: 80px;
@@ -259,31 +294,23 @@ section {
     .specialty-title {
         font-size: 1.5em;
     }
-
     .specialty-banner {
         padding: 50px;
         margin: -30px -10px;
     }
-
-    .specialty-card,
-    .reservation {
+    .specialty-card, .reservation {
         height: 50%;
         font-size: 1.0em;
         margin-bottom: 5px;
         border: solid 2px darkred;
     }
-
-    .sp-img,
-    .res-img {
+    .sp-img, .res-img {
         display: none
     }
 }
 
 @media only screen and (max-width: 734px) {
-
-    .body-bg,
-    .main {
+    .body-bg, .main {
         padding: 10px;
     }
-
 }
