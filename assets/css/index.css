@@ -24,7 +24,8 @@ html, body {
     font-size: 5rem;
     color: rgb(236, 0, 0);
 }
-.danger{
+
+.danger {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 2rem;
     color: rgb(255, 230, 0);
@@ -363,7 +364,6 @@ specialty {
     .body-bg {
         padding: 0px;
     }
-    .main {}
     #menu-area {
         position: relative;
         top: 140px;
@@ -380,4 +380,59 @@ specialty {
         position: relative;
         top: 240px;
     }
+}
+
+/* Footer */
+
+footer {
+    margin: 0;
+    position: relative;
+    background: rgb(36, 33, 33);
+    color: lightgray;
+}
+
+footer button {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    line-height: 1.2;
+    border-radius: 50%;
+    margin-top: 0;
+}
+
+.copyright {
+    background: lightgray;
+    color: rgb(78, 76, 76);
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+span {
+    border-bottom: solid 1px;
+}
+
+h3 {
+    font-family: Hipster;
+    font-size: 3rem;
+}
+
+.footer_p {
+    font-family: cursive;
+    font-size: 18px;
 }
