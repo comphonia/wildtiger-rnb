@@ -12,11 +12,13 @@
     src: url(../Hipster/Hipster.otf);
 }
 
-html, body {
+html,
+body {
     width: 100%;
     height: auto;
     color: whitesmoke;
     font-size: 1em;
+    scroll-behavior: smooth;
 }
 
 .main_header {
@@ -24,7 +26,8 @@ html, body {
     font-size: 5rem;
     color: rgb(236, 0, 0);
 }
-.danger{
+
+.danger {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 2rem;
     color: rgb(255, 230, 0);
@@ -35,7 +38,7 @@ html, body {
     width: 100%;
     height: 80vh;
     text-transform: uppercase;
-    background-image: url(../images/pexels-photo.jpeg);
+    background-image: url(../images/11461024.jpg);
     background-attachment: fixed;
     background-position: 20%;
     background-repeat: no-repeat;
@@ -54,7 +57,8 @@ html, body {
     height: 530px;
 }
 
-.sp-container, .res-container {
+.sp-container,
+.res-container {
     width: 80%;
     margin: 0 auto;
     transition: .3s ease-in-out;
@@ -101,11 +105,11 @@ specialty {
 /* NAV BAR */
 
 .navbar {
-    background-color: transparent !important;
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 .navbar-toggler-icon {
-    color: aliceblue
+    color: aliceblue !important;
 }
 
 .textthai {
@@ -120,7 +124,8 @@ specialty {
     z-index: -100;
 }
 
-.body-bg, .main {
+.body-bg,
+.main {
     background-color: #666;
     background-image: url('/assets/images/body-bg2-low.jpg');
     background-position: center;
@@ -154,7 +159,7 @@ specialty {
 
 .book-btn {
     border-radius: unset;
-    color: hsla(22, 79%, 53%, 0.451);
+    /*    color: hsla(22, 79%, 53%, 0.451);*/
     font-weight: bold;
     letter-spacing: 0.09rem;
     border-color: #aca895;
@@ -182,21 +187,44 @@ specialty {
 
 /*Specialty*/
 
+.specialty-card {
+    position: relative;
+    color: #445;
+    width: 100%;
+    height: 250px;
+    word-wrap: break-word;
+    overflow-y: hidden;
+    background-color: #FEFEFE;
+    transition: .3s ease-in-out;
+    overflow: hidden;
+}
+
+.specialty-card:hover,
+.reservation:hover {
+    background-color: #f6c710;
+    opacity: 1;
+    color: #444;
+    cursor: pointer;
+}
+
 .specialty-img {
     width: 100%;
     height: 250px;
     object-fit: cover;
 }
 
-.sp-img, .res-img {
+.sp-img,
+.res-img {
     transition: .3s ease-in-out;
 }
 
-.sp-img:hover, .res-img:hover {
+.sp-img:hover,
+.res-img:hover {
     opacity: 0.7;
 }
 
-.specialty-desc:hover+.sp-img, .reservation-desc:hover+.res-img {
+.specialty-desc:hover + .sp-img,
+.reservation-desc:hover + .res-img {
     opacity: 0.7;
 }
 
@@ -219,21 +247,18 @@ specialty {
     margin: auto;
 }
 
-.specialty-card {
-    color: #445;
+.specialty-overlay-container {
+    position: absolute;
+    background-color: aqua;
     width: 100%;
-    height: 250px;
-    word-wrap: break-word;
-    overflow-y: hidden;
-    background-color: #FEFEFE;
-    transition: .3s ease-in-out;
+    height: 0;
+    overflow: hidden;
+    transition: .5s ease;
+    display: none;
 }
 
-.specialty-card:hover, .reservation:hover {
-    background-color: #f6c710;
-    opacity: 1;
-    color: #444;
-    cursor: pointer;
+.specialty-card:hover .specialty-overlay-container {
+    height: 100%;
 }
 
 .specialty-banner {
@@ -276,6 +301,9 @@ specialty {
     margin-right: 0px;
     padding: 0px;
 }
+.menu-item:hover{cursor: pointer}
+
+.menu-item:hover .item{ color: rgb(212, 214, 64);}
 
 .item {
     font-family: 'Staatliches', cursive;
@@ -335,39 +363,57 @@ specialty {
     .hide-em {
         display: none
     }
-    .sp-underlay, .res-underlay {
+
+    .sp-underlay,
+    .res-underlay {
         background-color: transparent
     }
+
     .specialty-title {
         font-size: 1.5em;
     }
+
     .specialty-banner {
         padding: 50px;
     }
-    .specialty-card, .reservation {
+
+    .specialty-card,
+    .reservation {
         height: 50%;
         font-size: 1.0em;
         margin-bottom: 5px;
         border: solid 2px darkred;
     }
+    
+    .specialty-card:hover{color: transparent}
+    .specialty-overlay-container{display: block;}
+
     .res-container {
         top: 11%;
     }
-    .sp-container, .res-container {
+
+    .sp-container,
+    .res-container {
         width: 100%;
         margin: 0 auto;
     }
-    .sp-img, .res-img {
+
+    .sp-img,
+    .res-img {
         display: none;
     }
+
     .body-bg {
         padding: 0px;
     }
+
     .main {}
+
     #menu-area {
         position: relative;
         top: 140px;
     }
+
     .jumboheader {
         font-size: em;
         width: 100%;

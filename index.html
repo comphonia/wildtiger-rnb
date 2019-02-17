@@ -7,10 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link href="//db.onlinewebfonts.com/c/209ecd2a7c48d7dd828961d37cffc077?family=SalamanderScriptBoldW01-Rg"
-        rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="//db.onlinewebfonts.com/c/209ecd2a7c48d7dd828961d37cffc077?family=SalamanderScriptBoldW01-Rg" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Satisfy|Staatliches" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/index.css">
     <title>Hello, world!</title>
@@ -18,44 +16,41 @@
 
 <body class="body-bg">
     <div class="underlay"></div>
-
-    <div class="container-fluid main">
-        <!------------------------- Nav Bar------------- -->
-        <nav class="navbar navbar-expand-lg  p-3 px-5">
-            <a class="navbar-brand text-warning" href="#">Restaurant &amp; Bar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link text-warning" href="#">HOME <span class="sr-only">(current)</span></a>
-                    </li>
-                    <!--
+    <!------------------------- Nav Bar------------- -->
+    <nav class="navbar navbar-expand-lg navbar-dark  p-3 px-5 fixed-top">
+        <a class="navbar-brand text-warning" href="#">Restaurant &amp; Bar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-warning" href="#">HOME <span class="sr-only">(current)</span></a>
+                </li>
+                <!--
                         <li class="nav-item">
                             <a class="nav-link text-warning" href="#">NEWS</a>
                         </li>
 -->
-                    <li class="nav-item">
-                        <a class="nav-link text-danger" href="#">ABOUT US</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-danger" href="#">MENU</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-danger" href="#">CONTACT</a>
-                    </li>
+                <li class="nav-item">
+                    <a class="nav-link text-danger" href="#">ABOUT US</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-danger" href="#menu-area">MENU</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-danger" href="#">CONTACT</a>
+                </li>
 
-                </ul>
-            </div>
-        </nav>
-
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid main">
         <div class="col-12 d-flex align-items-center jumboheader">
             <div class=" mx-auto text-center danger">
                 <h1 class="main_header">Wild Tiger</h1>
                 <br>
-                THAI SPECIALITIES
+                THAI RESTAURANT AND BAR
             </div>
         </div>
 
@@ -112,7 +107,11 @@
 
                 <div id="specialty-area">
                     <div class="row">
-                        <div class="col-lg-6 specialty-card">
+
+                        <div class="col-lg-6 specialty-card p-0">
+                            <div class="specialty-overlay-container">
+                                <img src="assets/images/sushi.jpg" class="specialty-img">
+                            </div>
                             <div class="row p-0">
                                 <div class="col-lg-6 text-center specialty-desc">
                                     <div class="h4 specialty-title">Sushi</div>
@@ -125,35 +124,44 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 specialty-card">
+                        <div class="col-lg-6 specialty-card p-0">
+                            <div class="specialty-overlay-container">
+                                <img src="assets/images/pasta_sauce_greens.jpg" class="specialty-img">
+                            </div>
                             <div class="row" id="">
                                 <div class="col-lg-6 text-center specialty-desc">
-                                    <div class="h4 specialty-title">Sushi</div>
+                                    <div class="h4 specialty-title">Pasta &amp; Sauce</div>
                                     <div class="my-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere,
                                         quisquam.</div>
                                     <div class="card-price ">$12.50</div>
                                 </div>
                                 <div class="col-6 p-0 sp-img">
-                                    <img src="assets/images/sushi.jpg" class="specialty-img">
+                                    <img src="assets/images/pasta_sauce_greens.jpg" class="specialty-img">
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-lg-6 specialty-card">
+                        <div class="col-lg-6 specialty-card p-0">
+                            <div class="specialty-overlay-container">
+                                <img src="assets/images/pasta_sauce_greens.jpg" class="specialty-img">
+                            </div>
                             <div class="row">
                                 <div class="col-lg-6 text-center specialty-desc order-2">
-                                    <div class="h4 specialty-title">Sushi</div>
+                                    <div class="h4 specialty-title">Pasta &amp; Sauce</div>
                                     <div class="my-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere,
                                         quisquam.</div>
                                     <div class="card-price ">$12.50</div>
                                 </div>
                                 <div class="col-6 p-0 sp-img">
-                                    <img src="assets/images/sushi.jpg" class="specialty-img">
+                                    <img src="assets/images/pasta_sauce_greens.jpg" class="specialty-img">
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 specialty-card">
+                        <div class="col-lg-6 specialty-card p-0">
+                            <div class="specialty-overlay-container">
+                                <img src="assets/images/sushi.jpg" class="specialty-img">
+                            </div>
                             <div class="row " id="">
                                 <div class="col-lg-6 text-center specialty-desc order-2">
                                     <div class="h4 specialty-title">Sushi</div>
@@ -177,7 +185,7 @@
         <!--            Menu Area-->
         <div class="container-fluid pb-5" id="menu-area">
 
-            <div class="">
+            <div class="col-12">
 
                 <div class="row mx-auto">
                     <div class="col-lg-2 hide-em" style="
@@ -195,7 +203,7 @@
                         <div class="row ">
                             <div class="col-md-6">
                                 <div class="row">
-                                    <div class="col-10">
+                                    <div class="col-10 menu-item">
                                         <h4 class="item">PIZZA MEXICANA</h4>
                                         <p class="itemp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Comm
                                             nos.....</p>
@@ -207,7 +215,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="row">
-                                    <div class="col-10">
+                                    <div class="col-10 menu-item">
                                         <h4 class="item">PIZZA MEXICANA</h4>
                                         <p class="itemp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Comm
                                             nos.....</p>
@@ -219,7 +227,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="row">
-                                    <div class="col-10">
+                                    <div class="col-10 menu-item">
                                         <h4 class="item">PIZZA MEXICANA</h4>
                                         <p class="itemp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Comm
                                             nos.....</p>
@@ -231,7 +239,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="row">
-                                    <div class="col-10">
+                                    <div class="col-10 menu-item">
                                         <h4 class="item">PIZZA MEXICANA</h4>
                                         <p class="itemp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Comm
                                             nos.....</p>
@@ -243,7 +251,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="row">
-                                    <div class="col-10">
+                                    <div class="col-10 menu-item">
                                         <h4 class="item">PIZZA MEXICANA</h4>
                                         <p class="itemp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Comm
                                             nos.....</p>
@@ -255,7 +263,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="row">
-                                    <div class="col-10">
+                                    <div class="col-10 menu-item">
                                         <h4 class="item">PIZZA MEXICANA</h4>
                                         <p class="itemp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Comm
                                             nos.....</p>
@@ -274,7 +282,7 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="row">
-                                    <div class="col-10">
+                                    <div class="col-10 menu-item">
                                         <h4 class="item">PIZZA MEXICANA</h4>
                                         <p class="itemp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Comm
                                             nos.....</p>
@@ -286,7 +294,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="row">
-                                    <div class="col-10">
+                                    <div class="col-10 menu-item">
                                         <h4 class="item">PIZZA MEXICANA</h4>
                                         <p class="itemp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Comm
                                             nos.....</p>
@@ -298,7 +306,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="row">
-                                    <div class="col-10">
+                                    <div class="col-10 menu-item">
                                         <h4 class="item">PIZZA MEXICANA</h4>
                                         <p class="itemp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Comm
                                             nos.....</p>
@@ -310,7 +318,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="row">
-                                    <div class="col-10">
+                                    <div class="col-10 menu-item">
                                         <h4 class="item">PIZZA MEXICANA</h4>
                                         <p class="itemp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Comm
                                             nos.....</p>
@@ -322,7 +330,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="row">
-                                    <div class="col-10">
+                                    <div class="col-10 menu-item">
                                         <h4 class="item">PIZZA MEXICANA</h4>
                                         <p class="itemp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Comm
                                             nos.....</p>
@@ -334,7 +342,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="row">
-                                    <div class="col-10">
+                                    <div class="col-10 menu-item">
                                         <h4 class="item">PIZZA MEXICANA</h4>
                                         <p class="itemp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Comm
                                             nos.....</p>
@@ -386,15 +394,9 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 </body>
 
 </html>
