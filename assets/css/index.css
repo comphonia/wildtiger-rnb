@@ -12,6 +12,10 @@
     src: url(../Hipster/Hipster.otf);
 }
 
+a:hover {
+    text-decoration: none;
+}
+
 html,
 body {
     width: 100%;
@@ -124,13 +128,12 @@ specialty {
     z-index: -100;
 }
 
-.body-bg,
-.main {
+.body-bg {
     background-color: #666;
     background-image: url('/assets/images/body-bg2.jpg');
     background-position: center;
     background-size: cover;
-/*    background-repeat: no-repeat;*/
+    /*    background-repeat: no-repeat;*/
     padding: 30px;
     position: relative;
 }
@@ -183,6 +186,7 @@ specialty {
     background-color: #FEFEFE;
     transition: .3s ease-in-out;
     overflow-y: hidden;
+    user-select: none;
 }
 
 /*Specialty*/
@@ -197,6 +201,7 @@ specialty {
     background-color: #FEFEFE;
     transition: .3s ease-in-out;
     overflow: hidden;
+    user-select: none;
 }
 
 .specialty-card:hover,
@@ -301,9 +306,22 @@ specialty {
     margin-right: 0px;
     padding: 0px;
 }
-.menu-item:hover{cursor: pointer}
 
-.menu-item:hover .item{ color: rgb(212, 214, 64);}
+.item {
+    transition: .1s ease-in-out;
+}
+
+.menu-item {
+    user-select: none;
+}
+
+.menu-item:hover {
+    cursor: pointer
+}
+
+.menu-item:hover .item {
+    color: rgb(212, 214, 64);
+}
 
 .item {
     font-family: 'Staatliches', cursive;
@@ -345,87 +363,6 @@ specialty {
     border-bottom: 3px solid rgb(180, 169, 110);
 }
 
-/*Media Queries*/
-
-@media only screen and (max-width: 1440px) {
-    .body-bg {
-        padding: 80px;
-    }
-}
-
-@media only screen and (max-width: 1240px) {
-    .body-bg {
-        padding: 50px;
-    }
-}
-
-@media only screen and (max-width: 991px) {
-    .hide-em {
-        display: none
-    }
-
-    .sp-underlay,
-    .res-underlay {
-        background-color: transparent
-    }
-
-    .specialty-title {
-        font-size: 1.5em;
-    }
-
-    .specialty-banner {
-        padding: 50px;
-    }
-
-    .specialty-card,
-    .reservation {
-        height: 50%;
-        font-size: 1.0em;
-        margin-bottom: 5px;
-        border: solid 2px darkred;
-    }
-    
-    .specialty-card:hover{color: transparent}
-    .specialty-overlay-container{display: block;}
-
-    .res-container {
-        top: 11%;
-    }
-
-    .sp-container,
-    .res-container {
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    .sp-img,
-    .res-img {
-        display: none;
-    }
-
-    .body-bg {
-        padding: 0px;
-    }
-    #menu-area {
-        position: relative;
-        top: 140px;
-    }
-
-    .jumboheader {
-        font-size: em;
-        width: 100%;
-        height: 60vh;
-    }
-}
-
-@media only screen and (max-width: 602px) {
-    #menu-area {
-        position: relative;
-        top: 240px;
-    }
-}
-
-
 footer {
     margin: 0;
     position: relative;
@@ -433,10 +370,10 @@ footer {
     color: lightgray;
 }
 
-footer button {
+.to-top {
     width: 50px;
     height: 50px;
-    position: absolute;
+    position: relative;
     top: -20px;
     left: 50%;
     transform: translate(-50%, -10%);
@@ -451,6 +388,10 @@ footer button {
     line-height: 1.2;
     border-radius: 50%;
     margin-top: 0;
+}
+
+.to-top:hover {
+    cursor: pointer
 }
 
 .copyright {
@@ -477,4 +418,104 @@ h3 {
 .footer_p {
     font-family: cursive;
     font-size: 18px;
+}
+
+/*Media Queries*/
+
+@media only screen and (max-width: 1440px) {
+    .body-bg {
+        padding: 80px;
+    }
+}
+
+@media only screen and (max-width: 1240px) {
+    .body-bg {
+        padding: 50px;
+    }
+}
+
+
+@media only screen and (max-width: 1199px) {
+    .hide-em {
+        display: none
+    }
+}
+
+@media only screen and (max-width: 991px) {
+
+
+    .sp-underlay,
+    .res-underlay {
+        /*        background-color: transparent*/
+    }
+
+    .specialty-title {
+        font-size: 1.5em;
+    }
+
+    .specialty-banner {
+        padding: 50px;
+        margin-top: -13%;
+    }
+
+    .specialty-card,
+    .reservation {
+        height: 50%;
+        font-size: 1.0em;
+        margin-bottom: 5px;
+        border: solid 2px darkred;
+    }
+
+    .specialty-card:hover {
+        color: transparent
+    }
+
+    .specialty-overlay-container {
+        display: block;
+    }
+
+    .res-container {
+        /*        top: 11%;*/
+    }
+
+    .body-bg {
+        background-color: #F5F3F0;
+        background-image: url('');
+    }
+    
+    .underlay{display: none;}
+
+
+    .sp-container,
+    .res-container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .sp-img,
+    .res-img {
+        display: none;
+    }
+
+    .body-bg {
+        padding: 0px;
+    }
+
+    #menu-area {
+        position: relative;
+        top: 140px;
+    }
+
+    .jumboheader {
+        font-size: em;
+        width: 100%;
+        height: 60vh;
+    }
+}
+
+@media only screen and (max-width: 602px) {
+    #menu-area {
+        position: relative;
+        top: 240px;
+    }
 }
