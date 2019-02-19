@@ -8,14 +8,19 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <!-- <link href="//db.onlinewebfonts.com/c/209ecd2a7c48d7dd828961d37cffc077?family=SalamanderScriptBoldW01-Rg" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Satisfy|Staatliches" rel="stylesheet"> -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="assets/css/index.css">
     <title>Hello, world!</title>
 </head>
 
 <body class="body-bg">
     <div class="underlay"></div>
+    
+    <a id="back-top"><i class="fas fa-chevron-up"></i></a>
     <!------------------------- Nav Bar------------- -->
     <nav class="navbar navbar-expand-lg navbar-dark  p-3 px-5">
         <a class="navbar-brand text-warning" href="#">Restaurant &amp; Bar</a>
@@ -50,8 +55,13 @@
             <div class=" mx-auto text-center danger">
                 <h1 class="main_header" style="text-shadow: 1px 3px rgba(0,0,24,0.5)">Wild Tiger</h1>
                 <br>
-              <span class="text-warning" style="text-shadow: 1px 3px rgba(0,2,1,0.5)">  THAI RESTAURANT AND BAR</span>
+                <span class="text-warning" style="text-shadow: 1px 3px rgba(0,2,1,0.5)"> THAI RESTAURANT AND BAR</span>
             </div>
+            <a class="scroll-downs" href="#about-area">
+                <div class="mousey">
+                    <div class="scroller"></div>
+                </div>
+            </a>
         </div>
 
         <div class="res-underlay" id="about-area">
@@ -179,11 +189,11 @@
 
 
         <!--            Menu Area-->
-        <div class="container-fluid pb-5" id="menu-area">
+        <div class="container-fluid owl-carousel" id="menu-area" style="padding-bottom: 200px;">
 
-            <div class="col-12">
+            <div class="col-12 ">
 
-                <div class="row mx-auto">
+                <div class="row mx-auto ">
                     <div class="col-xl-2 hide-em" style="
                             background-image: url('assets/images/alcohol-alcoholic-beverage-533257.jpg');
                             background-color: #cccccc;
@@ -195,6 +205,18 @@
                     </div>
                     <div class="col-lg-12 col-xl-8 ">
                         <h1 class="text-center custommenu pt-5">menu</h1>
+                        <div class="row mt-5">
+                            <div class="col mx-auto d-flex justify-content-center ">
+                                <div class="">
+                                    <button type="button" class="btn btn-outline-danger active my-1 mx-1">Appetizers</button>
+                                    <button type="button" class="btn btn-outline-danger my-1 mx-1">Entrees</button>
+                                    <button type="button" class="btn btn-outline-danger my-1 mx-1">Sides</button>
+                                    <button type="button" class="btn btn-outline-danger my-1 mx-1">Specials</button>
+                                    <button type="button" class="btn btn-outline-danger my-1 mx-1">Drinks &amp; Desserts</button>
+                                </div>
+
+                            </div>
+                        </div>
                         <h4 class="text-center customp">FOOD &amp; APERITIVES</h4>
                         <div class="row ">
                             <div class="col-md-6">
@@ -388,7 +410,7 @@
     </div>
 
     <footer id="contact-area">
-       <a href="#"><button class="to-top">TOP</button></a>
+        <a href="#"><button class="to-top fas-fachevron">TOP</button></a>
 
         <div class="container">
             <div class="row">
@@ -430,9 +452,7 @@
 
         <div class="copyright">
             <p><small>Copyright 2019 &#169; Made by <span>Trippy The OG</span> Team</small></p>
-            <p><small>Permissions and Copyright &#8226; Contact <a
-                        href="https://www.instagram.com/kishanpatel911/">Kishan</a> &amp; <a
-                        href="https://www.comphonia.com">Comphonia</a></small></p>
+            <p><small>Permissions and Copyright &#8226; Contact <a href="https://www.instagram.com/kishanpatel911/">Kishan</a> &amp; <a href="https://www.comphonia.com">Comphonia</a></small></p>
         </div>
 
     </footer>
@@ -440,9 +460,25 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="assets/js/libs/owl.carousel.min.js"></script>
+    <script src="assets/js/functionality.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('.owl-carousel').owlCarousel({
+                items: 1,
+                loop: false,
+                center: true,
+                margin: 10,
+                URLhashListener: true,
+                autoplayHoverPause: true,
+                startPosition: 'URLHash'
+            });
+        })
+    </script>
 </body>
 
 </html>

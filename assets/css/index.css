@@ -279,9 +279,11 @@ specialty {
 
 /*Menu*/
 
+/*
 .btn-outline-danger.active {
     box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, .5);
 }
+*/
 
 #menu-area {
     color: #665;
@@ -296,11 +298,13 @@ specialty {
     color: rgb(212, 214, 64);
 }
 
+/*
 .col-1 {
     margin-left: 0px;
     margin-right: 0px;
     padding: 0px;
 }
+*/
 
 .item {
     transition: .1s ease-in-out;
@@ -363,6 +367,7 @@ footer {
     position: relative;
     background: rgb(36, 33, 33);
     color: lightgray;
+    z-index: 9;
 }
 
 .to-top {
@@ -414,6 +419,84 @@ h3 {
     font-family: cursive;
     font-size: 18px;
 }
+
+/*Scroll Mouse*/
+.scroll-downs {
+  position: absolute;
+  top: 550px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  
+  width :34px;
+  height: 55px;
+}
+.mousey {
+  width: 2px;
+  padding: 8px 13px;
+  height: 35px;
+  border: 2px solid #555;
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
+}
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: #555;
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+  animation-iteration-count: infinite;
+}
+@keyframes scroll {
+  0% { opacity: 0; }
+  10% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(15px); opacity: 0;}
+}
+
+/*Back to Top Button*/
+#back-top {
+  display: inline-block;
+  background-color: #FF9800;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+      font-weight: normal;
+  font-style: normal;
+  font-size: 1.6em;
+  line-height: 45px;
+  color: #fff;
+}
+
+#back-top:hover {
+  cursor: pointer;
+  background-color: #FF7800;
+}
+#back-top:active {
+  background-color: #FF7800;
+}
+#back-top.show {
+  opacity: 0.5;
+  visibility: visible;
+}
+@media (min-width: 500px) {
+  #back-top {
+    margin: 30px;
+  }
+}
+
 
 /*Media Queries*/
 
