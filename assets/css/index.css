@@ -12,15 +12,12 @@
     src: url(../Hipster/Hipster.otf);
 }
 
-a,
-a:hover {
+a, a:hover {
     text-decoration: none;
     color: inherit;
 }
 
-
-html,
-body {
+html, body {
     width: 100%;
     height: auto;
     color: #333;
@@ -29,7 +26,7 @@ body {
 }
 
 .main_header {
-    font-family: Hipster;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 5rem;
     color: rgb(236, 0, 0);
 }
@@ -45,9 +42,9 @@ body {
     width: 100%;
     height: 80vh;
     text-transform: uppercase;
-    background-image: url(../images/home.jpg);
+    background-image: url(../images/evening_table_dinner_restaurant_coast_look_fires_garland_48367_1280x960.jpg);
     background-attachment: fixed;
-    background-position: 20%;
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -59,9 +56,11 @@ body {
 .f1 {
     font-size: 1em !important;
 }
+
 .f1-2 {
     font-size: 1.2em !important;
 }
+
 .f1-5 {
     font-size: 1.5em !important;
 }
@@ -86,7 +85,6 @@ specialty {
 .navbar {
     background-color: rgba(0, 0, 0, 0.9);
 }
-
 
 .textthai {
     font-family: sans-serif;
@@ -126,7 +124,6 @@ specialty {
     font-size: 3rem;
 }
 
-
 .res-container {
     position: relative;
     top: -6%;
@@ -139,8 +136,7 @@ specialty {
     height: 530px;
 }
 
-.sp-container,
-.res-container {
+.sp-container, .res-container {
     width: 80%;
     margin: 0 auto;
     transition: .3s ease-in-out;
@@ -223,8 +219,7 @@ specialty {
     user-select: none;
 }
 
-.specialty-card:hover,
-.reservation:hover {
+.specialty-card:hover, .reservation:hover {
     background-color: #f6c710;
     opacity: 1;
     color: #444;
@@ -237,18 +232,15 @@ specialty {
     object-fit: cover;
 }
 
-.sp-img,
-.res-img {
+.sp-img, .res-img {
     transition: .3s ease-in-out;
 }
 
-.sp-img:hover,
-.res-img:hover {
+.sp-img:hover, .res-img:hover {
     opacity: 0.7;
 }
 
-.specialty-desc:hover + .sp-img,
-.reservation-desc:hover + .res-img {
+.specialty-desc:hover+.sp-img, .reservation-desc:hover+.res-img {
     opacity: 0.7;
 }
 
@@ -436,7 +428,7 @@ footer {
 }
 
 span {
-    border-bottom: solid 1px;
+    font-size: 1.5rem;
 }
 
 h3 {
@@ -450,6 +442,7 @@ h3 {
 }
 
 /*Scroll Mouse*/
+
 .scroll-downs {
     position: absolute;
     top: 550px;
@@ -457,7 +450,6 @@ h3 {
     bottom: 0;
     left: 0;
     margin: auto;
-
     width: 34px;
     height: 55px;
 }
@@ -487,12 +479,10 @@ h3 {
     0% {
         opacity: 0;
     }
-
     10% {
         transform: translateY(0);
         opacity: 1;
     }
-
     100% {
         transform: translateY(15px);
         opacity: 0;
@@ -500,6 +490,7 @@ h3 {
 }
 
 /*Back to Top Button*/
+
 #back-top {
     display: inline-block;
     background-color: #FF9800;
@@ -510,8 +501,7 @@ h3 {
     position: fixed;
     bottom: 30px;
     right: 30px;
-    transition: background-color .3s,
-        opacity .5s, visibility .5s;
+    transition: background-color .3s, opacity .5s, visibility .5s;
     opacity: 0;
     visibility: hidden;
     z-index: 12;
@@ -542,7 +532,6 @@ h3 {
     }
 }
 
-
 /*Media Queries*/
 
 @media only screen and (max-width: 1440px) {
@@ -557,7 +546,6 @@ h3 {
     }
 }
 
-
 @media only screen and (max-width: 1199px) {
     .hide-em {
         display: none
@@ -565,73 +553,53 @@ h3 {
 }
 
 @media only screen and (max-width: 991px) {
-
-
-    .sp-underlay,
-    .res-underlay {
+    .sp-underlay, .res-underlay {
         /*        background-color: transparent*/
     }
-
     .specialty-title {
         font-size: 1.5em;
     }
-
     .specialty-banner {
         font-size: 3em;
         padding: 50px;
         margin-top: -13%;
     }
-
-    .specialty-card,
-    .reservation {
+    .specialty-card, .reservation {
         height: 50%;
         font-size: 1.0em;
         margin-bottom: 5px;
         border: solid 2px darkred;
     }
-
     .specialty-card:hover {
         color: transparent
     }
-
     .specialty-overlay-container {
         display: block;
     }
-
     .res-container {
         /*        top: 11%;*/
     }
-
     .body-bg {
         background-color: #F5F3F0;
         background-image: url('');
     }
-
     .underlay {
         display: none;
     }
-
-
-    .sp-container,
-    .res-container {
+    .sp-container, .res-container {
         width: 100%;
         margin: 0 auto;
     }
-
-    .sp-img,
-    .res-img {
+    .sp-img, .res-img {
         display: none;
     }
-
     .body-bg {
         padding: 0px;
     }
-
     #menu-area {
         position: relative;
         top: 140px;
     }
-
     .jumboheader {
         font-size: em;
         width: 100%;
@@ -644,7 +612,6 @@ h3 {
         position: relative;
         top: 240px;
     }
-
     footer {
         margin-top: 50px;
     }
@@ -654,50 +621,37 @@ h3 {
     .main_header {
         font-size: 2em;
     }
-
     .main_sub {
         font-size: 0.8em;
     }
 }
 
-
 /*Modal*/
+
 .modal {
     /* This way it could be display flex or grid or whatever also. */
     display: block;
-
-
     vertical-align: middle;
     overflow-y: hidden;
-
     width: 540px;
-  
-
     height: 540px;
-
-
     position: fixed;
-
     z-index: 100;
-
     left: 50%;
     top: 50%;
-
     /* Use this for centering if unknown width/height */
     transform: translate(-50%, -50%);
-
     border-radius: 5px;
-
     background: white;
     box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.3);
-     transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
 }
 
 .closed {
     display: none;
 }
 
-.modal-open{}
+.modal-open {}
 
 .modal-overlay {
     position: fixed;
@@ -706,7 +660,6 @@ h3 {
     width: 100%;
     height: 100%;
     z-index: 100;
-
     background: rgba(0, 0, 0, 0.6);
 }
 
@@ -733,11 +686,9 @@ h3 {
     object-fit: cover;
 }
 
-
 /*Media Queries*/
 
 @media only screen and (max-width: 600px) {
-
     /*Modal*/
     .modal {
         width: 400px;
@@ -745,14 +696,12 @@ h3 {
         height: 500px;
         max-height: 90%;
     }
-
     .modal-guts {
         padding: 20px;
     }
 }
 
 @media only screen and (max-width: 460px) {
-
     /*Modal*/
     .modal {
         width: 350px;
@@ -760,8 +709,82 @@ h3 {
         height: 500px;
         max-height: 90%;
     }
-
     .modal-guts {
         padding: 20px;
     }
+}
+
+/* THAI RESTURENT AND BARx */
+
+.findmore {
+    display: inline-block;
+    position: relative;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    cursor: pointer;
+    margin: 20px 30px;
+    background: hsla(0, 0%, 100%, 0.09);
+}
+
+.findmore::before, .findmore::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    transition: all 0.2s linear;
+    background: rgb(255, 255, 255);
+}
+
+span::before, span::after {
+    content: "";
+    width: 2px;
+    height: 0;
+    position: absolute;
+    transition: all 0.2s linear;
+    background: rgb(255, 255, 255);
+}
+
+.findmore:hover::before, .findmore:hover::after {
+    width: 100%;
+}
+
+.findmore:hover span::before, .findmore:hover span::after {
+    height: 100%;
+}
+
+.btn-1::before, .btn-1::after {
+    transition-delay: 0.2s;
+}
+
+.btn-1 span::before, .btn-1 span::after {
+    transition-delay: 0s;
+}
+
+.btn-1::before {
+    right: 0;
+    top: 0;
+}
+
+.btn-1::after {
+    left: 0;
+    bottom: 0;
+}
+
+.btn-1 span::before {
+    left: 0;
+    top: 0;
+}
+
+.btn-1 span::after {
+    right: 0;
+    bottom: 0;
+}
+
+.btn-1:hover::before, .btn-1:hover::after {
+    transition-delay: 0s;
+}
+
+.btn-1:hover span::before, .btn-1:hover span::after {
+    transition-delay: 0.2s;
 }
