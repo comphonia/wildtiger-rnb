@@ -9,9 +9,9 @@ body {
     font-family:cursive;
 }
 
-a:hover {
+a:hover,a {
     text-decoration: none;
-    color: inherit;
+    color: #222;
     cursor: pointer;
 }
 

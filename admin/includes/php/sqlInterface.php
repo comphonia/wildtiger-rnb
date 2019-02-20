@@ -44,13 +44,23 @@ class SqlInterface{
                                 <p class='card-text text-muted'>{$item['description']}</p>
                             </div>
                         </div>
-                    </div>
-                ";
+                    </div>";
             }
             
             return $items;
         }
     }
+    
+        function getAllCategories(){
+            if($this->sql->getAllMenuItems()){
+                $allData = $this->sql->getData();
+                $allData = json_encode($allData);
+                //echo "<script>console.log($allData)</script>";
+                
+                //return JSON
+                return $allData;
+            }
+        }
 
 
 

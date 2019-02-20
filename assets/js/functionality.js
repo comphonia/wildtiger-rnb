@@ -1,6 +1,4 @@
 $(document).ready(function () {
-
-
     // Scroll to top button
     var btn = $('#back-top');
 
@@ -44,7 +42,7 @@ $(document).ready(function () {
     function toggleModal() {
         modal.classList.toggle("closed");
         modalOverlay.classList.toggle("closed");
-     //   body.classList.toggle("modal-open");
+        //   body.classList.toggle("modal-open");
     }
 
     closeButton.addEventListener("click", () => toggleModal());
@@ -52,7 +50,10 @@ $(document).ready(function () {
     modalOverlay.addEventListener("click", () => toggleModal());
 
     for (let i = 0; i < menuItems.length; i++) {
-        menuItems[i].addEventListener("click", () => toggleModal());
+        menuItems[i].addEventListener("click", function () {
+            toggleModal();
+            setModal(this);
+        });
     }
 
 

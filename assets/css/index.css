@@ -100,7 +100,7 @@ specialty {
 
 .body-bg {
     background-color: #666;
-    background-image: url('/assets/images/body-bg2.jpg');
+    background-image: url('../images/body-bg2.jpg');
     background-position: center;
     background-size: cover;
     /*    background-repeat: no-repeat;*/
@@ -331,7 +331,7 @@ specialty {
 
 .menu-item {
     user-select: none;
-    padding: 0;
+/*    padding: 0;*/
 }
 
 .menu-item:hover {

@@ -61,7 +61,7 @@ VALUES (null,:name,:image,:price,:description,:type,:availability,:categoryId) "
         //query stmt
         return $this->querydb($stmt,"POST");
     }
-    function getMenuItems($category)
+function getMenuItemsByCategory($category)
     {
         // prepare sql and bind parameters
         $stmt = $this->conn->prepare("SELECT M.id,name,image,price,description,type,availability,categoryId
@@ -73,13 +73,29 @@ WHERE C.category = :category");
         //query stmt
         return $this->querydb($stmt,"GET");
     }
-    function getAllCategories()
+function getAllCategories()
     {
         // prepare sql and bind parameters
         $stmt = $this->conn->prepare("SELECT DISTINCT category from `item_category`");
         //query stmt
         return $this->querydb($stmt,"GET");
     }
+    
+    
+    function getAllMenuItems()
+    {
+        // prepare sql and bind parameters
+        $stmt = $this->conn->prepare("SELECT M.id,name,image,price,description,availability,C.category
+FROM `menu_item` as M
+LEFT JOIN `item_category` as C
+ON M.categoryId = C.id");
+        //query stmt
+        return $this->querydb($stmt,"GET");
+    }
+    
+    
+    
+    
     // End Class    
 }
 ?>

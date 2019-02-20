@@ -42,17 +42,25 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
             $error = "Sorry, file already exists.";
             $uploadOk = 0;
         }
+        
         // Check file size
         if ($_FILES["fileToUpload"]["size"] > 2000000) {
             $hasErrorMessage = true;
             $error = "Sorry, your file is too large. Max size is 2MB";
             $uploadOk = 0;
         }
+
         // Allow certain file formats
         if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
            && $imageFileType != "gif" ) {
             $hasErrorMessage = true;
             $error = "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
+            $uploadOk = 0;
+        }
+        // Check if empty
+        if ($_FILES["fileToUpload"]["name"] == "") {
+            $hasErrorMessage = true;
+            $error = "Sorry, you need to upload an item image";
             $uploadOk = 0;
         }
         // Check if $uploadOk is set to 0 by an error
@@ -78,6 +86,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
         $_SESSION["isError"] = $isError;
         $_SESSION["errorMessage"] = $error;
-        header("Location: http://localhost/wildtiger-rnb/admin/additem.php");
+        header("Location: http://localhost/wildtiger-rnb/admin/index.php");
 }
 ?>
