@@ -9,8 +9,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <!-- <link href="//db.onlinewebfonts.com/c/209ecd2a7c48d7dd828961d37cffc077?family=SalamanderScriptBoldW01-Rg" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Satisfy|Staatliches" rel="stylesheet"> -->
+    <link href="//db.onlinewebfonts.com/c/209ecd2a7c48d7dd828961d37cffc077?family=SalamanderScriptBoldW01-Rg" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Satisfy|Staatliches" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="assets/css/index.css">
@@ -19,7 +19,7 @@
 
 <body class="body-bg">
     <div class="underlay"></div>
-    
+
     <a id="back-top"><i class="fas fa-chevron-up"></i></a>
     <!------------------------- Nav Bar------------- -->
     <nav class="navbar navbar-expand-lg navbar-dark  p-3 px-5">
@@ -55,7 +55,7 @@
             <div class=" mx-auto text-center danger">
                 <h1 class="main_header" style="text-shadow: 1px 3px rgba(0,0,24,0.5)">Wild Tiger</h1>
                 <br>
-                <span class="text-warning" style="text-shadow: 1px 3px rgba(0,2,1,0.5)"> THAI RESTAURANT AND BAR</span>
+                <span class="text-warning main_sub" style="text-shadow: 1px 3px rgba(0,2,1,0.5)"> THAI RESTAURANT AND BAR</span>
             </div>
             <a class="scroll-downs" href="#about-area">
                 <div class="mousey">
@@ -75,7 +75,7 @@
                                 Call us now to book a table in our resturent. Calls must be in the sme days as the reservation
                             </p>
                             <div class="text-center">
-                                <button type="button" class="btn btn-outline-danger book-btn">BOOK A TABLE</button>
+                                <a href="tel:+163105321562" class="btn btn-outline-danger book-btn">BOOK A TABLE</a>
                             </div>
                         </div>
                         <div class="col-8 p-0 res-img">
@@ -189,7 +189,7 @@
 
 
         <!--            Menu Area-->
-        <div class="container-fluid owl-carousel" id="menu-area" style="padding-bottom: 200px;">
+        <div class="container-fluid" id="menu-area" style="padding-bottom: 200px;">
 
             <div class="col-12 ">
 
@@ -206,174 +206,349 @@
                     <div class="col-lg-12 col-xl-8 ">
                         <h1 class="text-center custommenu pt-5">menu</h1>
                         <div class="row mt-5">
-                            <div class="col mx-auto d-flex justify-content-center ">
+                            <div class="col-12 mx-auto d-flex justify-content-center ">
                                 <div class="">
-                                    <button type="button" class="btn btn-outline-danger active my-1 mx-1">Appetizers</button>
-                                    <button type="button" class="btn btn-outline-danger my-1 mx-1">Entrees</button>
-                                    <button type="button" class="btn btn-outline-danger my-1 mx-1">Sides</button>
-                                    <button type="button" class="btn btn-outline-danger my-1 mx-1">Specials</button>
-                                    <button type="button" class="btn btn-outline-danger my-1 mx-1">Drinks &amp; Desserts</button>
+                                    <a href="#one" class="btn btn-outline-danger  my-1 mx-1">Appetizers</a>
+                                    <a href="#two" class="btn btn-outline-danger my-1 mx-1">Entrees</a>
+                                    <a href="#three" class="btn btn-outline-danger my-1 mx-1">Sides</a>
+                                    <a href="#four" class="btn btn-outline-danger my-1 mx-1">Specials</a>
+                                    <a href="#five" class="btn btn-outline-danger my-1 mx-1">Drinks &amp; Desserts</a>
                                 </div>
 
                             </div>
                         </div>
-                        <h4 class="text-center customp">FOOD &amp; APERITIVES</h4>
-                        <div class="row ">
-                            <div class="col-md-6">
-                                <div class="row">
-                                    <div class="col-10 menu-item">
-                                        <h4 class="item">PIZZA MEXICANA</h4>
-                                        <p class="itemp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Comm
-                                            nos.....</p>
+                        <div class="owl-carousel">
+                            <div class="w-100" data-hash="one">
+                                <h4 class="text-center customp">APPETIZERS</h4>
+                                <div class="row m-0">
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-10 menu-item p-0">
+                                                <h4 class="item">PIZZA MEXICANA</h4>
+                                                <p class="itemp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Comm
+                                                    nos.....</p>
+                                            </div>
+                                            <div class="col-2  money p-0" style="background: white">
+                                                $17
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="col-2  money" style="background: white">
-                                        $17
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-10 menu-item p-0">
+                                                <h4 class="item">PIZZA MEXICANA</h4>
+                                                <p class="itemp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Comm
+                                                    nos.....</p>
+                                            </div>
+                                            <div class="col-2  money p-0" style="background: white">
+                                                $17
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-10 menu-item p-0">
+                                                <h4 class="item">PIZZA MEXICANA</h4>
+                                                <p class="itemp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Comm
+                                                    nos.....</p>
+                                            </div>
+                                            <div class="col-2  money p-0" style="background: white">
+                                                $17
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-10 menu-item p-0">
+                                                <h4 class="item">PIZZA MEXICANA</h4>
+                                                <p class="itemp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Comm
+                                                    nos.....</p>
+                                            </div>
+                                            <div class="col-2  money p-0" style="background: white">
+                                                $17
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-10 menu-item p-0">
+                                                <h4 class="item">PIZZA MEXICANA</h4>
+                                                <p class="itemp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Comm
+                                                    nos.....</p>
+                                            </div>
+                                            <div class="col-2  money p-0" style="background: white">
+                                                $17
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-10 menu-item p-0">
+                                                <h4 class="item">PIZZA MEXICANA</h4>
+                                                <p class="itemp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Comm
+                                                    nos.....</p>
+                                            </div>
+                                            <div class="col-2  money p-0" style="background: white">
+                                                $17
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="row">
-                                    <div class="col-10 menu-item">
-                                        <h4 class="item">PIZZA MEXICANA</h4>
-                                        <p class="itemp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Comm
-                                            nos.....</p>
+
+                            <div class="" data-hash="two">
+                                <h4 class="text-center customp">ENTREES</h4>
+                                <div class="row m-0 ">
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-10 menu-item p-0">
+                                                <h4 class="item">PIZZA MEXICANA</h4>
+                                                <p class="itemp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Comm
+                                                    nos.....</p>
+                                            </div>
+                                            <div class="col-2  money p-0" style="background: white">
+                                                $17
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="col-2  money" style="background: white">
-                                        $17
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-10 menu-item p-0">
+                                                <h4 class="item">PIZZA MEXICANA</h4>
+                                                <p class="itemp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Comm
+                                                    nos.....</p>
+                                            </div>
+                                            <div class="col-2  money p-0" style="background: white">
+                                                $17
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-10 menu-item p-0">
+                                                <h4 class="item">PIZZA MEXICANA</h4>
+                                                <p class="itemp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Comm
+                                                    nos.....</p>
+                                            </div>
+                                            <div class="col-2  money p-0" style="background: white">
+                                                $17
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-10 menu-item p-0">
+                                                <h4 class="item">PIZZA MEXICANA</h4>
+                                                <p class="itemp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Comm
+                                                    nos.....</p>
+                                            </div>
+                                            <div class="col-2  money p-0" style="background: white">
+                                                $17
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-10 menu-item p-0">
+                                                <h4 class="item">PIZZA MEXICANA</h4>
+                                                <p class="itemp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Comm
+                                                    nos.....</p>
+                                            </div>
+                                            <div class="col-2  money p-0" style="background: white">
+                                                $17
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-10 menu-item p-0">
+                                                <h4 class="item">PIZZA MEXICANA</h4>
+                                                <p class="itemp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Comm
+                                                    nos.....</p>
+                                            </div>
+                                            <div class="col-2  money p-0" style="background: white">
+                                                $17
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+
+                            <div class="" data-hash="three">
+                                <h4 class="text-center customp">SIDES</h4>
+                                <div class="row m-0 ">
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-10 menu-item p-0">
+                                                <h4 class="item">PIZZA MEXICANA</h4>
+                                                <p class="itemp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Comm
+                                                    nos.....</p>
+                                            </div>
+                                            <div class="col-2  money p-0" style="background: white">
+                                                $17
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-10 menu-item p-0">
+                                                <h4 class="item">PIZZA MEXICANA</h4>
+                                                <p class="itemp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Comm
+                                                    nos.....</p>
+                                            </div>
+                                            <div class="col-2  money p-0" style="background: white">
+                                                $17
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-10 menu-item p-0">
+                                                <h4 class="item">PIZZA MEXICANA</h4>
+                                                <p class="itemp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Comm
+                                                    nos.....</p>
+                                            </div>
+                                            <div class="col-2  money p-0" style="background: white">
+                                                $17
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-10 menu-item p-0">
+                                                <h4 class="item">PIZZA MEXICANA</h4>
+                                                <p class="itemp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Comm
+                                                    nos.....</p>
+                                            </div>
+                                            <div class="col-2  money p-0" style="background: white">
+                                                $17
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-10 menu-item p-0">
+                                                <h4 class="item">PIZZA MEXICANA</h4>
+                                                <p class="itemp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Comm
+                                                    nos.....</p>
+                                            </div>
+                                            <div class="col-2  money p-0" style="background: white">
+                                                $17
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-10 menu-item p-0">
+                                                <h4 class="item">PIZZA MEXICANA</h4>
+                                                <p class="itemp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Comm
+                                                    nos.....</p>
+                                            </div>
+                                            <div class="col-2  money p-0" style="background: white">
+                                                $17
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="row">
-                                    <div class="col-10 menu-item">
-                                        <h4 class="item">PIZZA MEXICANA</h4>
-                                        <p class="itemp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Comm
-                                            nos.....</p>
+
+                            <div class="" data-hash="three">
+                                <h4 class="text-center customp">SIDES</h4>
+                                <div class="row m-0 ">
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-10 menu-item p-0">
+                                                <h4 class="item">PIZZA MEXICANA</h4>
+                                                <p class="itemp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Comm
+                                                    nos.....</p>
+                                            </div>
+                                            <div class="col-2  money p-0" style="background: white">
+                                                $17
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="col-2  money" style="background: white">
-                                        $17
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="row">
-                                    <div class="col-10 menu-item">
-                                        <h4 class="item">PIZZA MEXICANA</h4>
-                                        <p class="itemp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Comm
-                                            nos.....</p>
-                                    </div>
-                                    <div class="col-2  money" style="background: white">
-                                        $17
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="row">
-                                    <div class="col-10 menu-item">
-                                        <h4 class="item">PIZZA MEXICANA</h4>
-                                        <p class="itemp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Comm
-                                            nos.....</p>
-                                    </div>
-                                    <div class="col-2  money" style="background: white">
-                                        $17
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-10 menu-item p-0">
+                                                <h4 class="item">PIZZA MEXICANA</h4>
+                                                <p class="itemp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Comm
+                                                    nos.....</p>
+                                            </div>
+                                            <div class="col-2  money p-0" style="background: white">
+                                                $17
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="row">
-                                    <div class="col-10 menu-item">
-                                        <h4 class="item">PIZZA MEXICANA</h4>
-                                        <p class="itemp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Comm
-                                            nos.....</p>
+                            <div class="" data-hash="four">
+                                <h4 class="text-center customp">SPECIALS</h4>
+                                <div class="row m-0 ">
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-10 menu-item p-0">
+                                                <h4 class="item">PIZZA MEXICANA</h4>
+                                                <p class="itemp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Comm
+                                                    nos.....</p>
+                                            </div>
+                                            <div class="col-2  money p-0" style="background: white">
+                                                $17
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="col-2  money" style="background: white">
-                                        $17
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-10 menu-item p-0">
+                                                <h4 class="item">PIZZA MEXICANA</h4>
+                                                <p class="itemp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Comm
+                                                    nos.....</p>
+                                            </div>
+                                            <div class="col-2  money p-0" style="background: white">
+                                                $17
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="" data-hash="five">
+                                <h4 class="text-center customp">DRINKS &amp; DESSERTS</h4>
+                                <div class="row m-0 ">
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-10 menu-item p-0">
+                                                <h4 class="item">PIZZA MEXICANA</h4>
+                                                <p class="itemp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Comm
+                                                    nos.....</p>
+                                            </div>
+                                            <div class="col-2  money p-0" style="background: white">
+                                                $17
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-10 menu-item p-0">
+                                                <h4 class="item">PIZZA MEXICANA</h4>
+                                                <p class="itemp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Comm
+                                                    nos.....</p>
+                                            </div>
+                                            <div class="col-2  money p-0" style="background: white">
+                                                $17
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
-
-
-                        <!-- DESSERTS -->
-
-                        <h4 class="text-center customp">DESSERTS</h4>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="row">
-                                    <div class="col-10 menu-item">
-                                        <h4 class="item">PIZZA MEXICANA</h4>
-                                        <p class="itemp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Comm
-                                            nos.....</p>
-                                    </div>
-                                    <div class="col-2  money" style="background: white">
-                                        $17
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="row">
-                                    <div class="col-10 menu-item">
-                                        <h4 class="item">PIZZA MEXICANA</h4>
-                                        <p class="itemp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Comm
-                                            nos.....</p>
-                                    </div>
-                                    <div class="col-2  money" style="background: white">
-                                        $17
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="row">
-                                    <div class="col-10 menu-item">
-                                        <h4 class="item">PIZZA MEXICANA</h4>
-                                        <p class="itemp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Comm
-                                            nos.....</p>
-                                    </div>
-                                    <div class="col-2  money" style="background: white">
-                                        $17
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="row">
-                                    <div class="col-10 menu-item">
-                                        <h4 class="item">PIZZA MEXICANA</h4>
-                                        <p class="itemp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Comm
-                                            nos.....</p>
-                                    </div>
-                                    <div class="col-2  money" style="background: white">
-                                        $17
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="row">
-                                    <div class="col-10 menu-item">
-                                        <h4 class="item">PIZZA MEXICANA</h4>
-                                        <p class="itemp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Comm
-                                            nos.....</p>
-                                    </div>
-                                    <div class="col-2  money" style="background: white">
-                                        $17
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="row">
-                                    <div class="col-10 menu-item">
-                                        <h4 class="item">PIZZA MEXICANA</h4>
-                                        <p class="itemp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Comm
-                                            nos.....</p>
-                                    </div>
-                                    <div class="col-2  money" style="background: white">
-                                        $17
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- END DESSERRTS -->
-
                     </div>
+
+                    <!-- END MENU -->
+
                     <!-- Right Side col 2 -->
                     <div class="hide-em col-xl-2">
                         <div style="
@@ -405,10 +580,10 @@
             </div>
         </div>
 
-        <!-- END DESSERRTS -->
-
     </div>
-
+    
+    
+<!--Footer-->
     <footer id="contact-area">
         <a href="#"><button class="to-top fas-fachevron">TOP</button></a>
 
@@ -442,8 +617,8 @@
                     </h3>
                     <br>
                     <ul class="text-center footer_p">
-                        <li>Phone (631) 0532-1562</li>
-                        <li>hello@gmail.com</li>
+                        <a href="tel:+163105321562">Phone (631) 0532-1562</a>
+                        <a href="mailto:hello@gmail.com">hello@gmail.com</a>
                     </ul>
                 </div>
             </div>
@@ -456,6 +631,25 @@
         </div>
 
     </footer>
+    
+    <!--Modal-->
+    <modal>
+        <div class="modal-overlay closed" id="modal-overlay"></div>
+        <div class="modal closed" id="modal">
+
+            <div class="modal-guts">
+                <div class="modal-head">
+                    <div class="close-button float-right f1" id="close-button"><i class="fas fa-times"></i></div>
+                    <div class="item f1-5">Crispy Egg Rolls</div>
+                    <hr>
+                </div>
+                <div class="modal-image"><img class="img-fit" src="assets/images/sushi.jpg" alt="Card image cap"></div>
+                <p class="item my-3 h5 f1-2">Price: <span class=" float-right money f1-5" >$4.50</span></p>
+                <p class="item my-2 h5 f1-2">Description</p>
+                <p class="card-text itemp">Silver noodle, taro, cabbage and carrot served with sweet &amp; sour plum sauce.</p>
+            </div>
+        </div>
+    </modal>
 
 
     <!-- Optional JavaScript -->
@@ -468,15 +662,7 @@
 
     <script>
         $(document).ready(function() {
-            $('.owl-carousel').owlCarousel({
-                items: 1,
-                loop: false,
-                center: true,
-                margin: 10,
-                URLhashListener: true,
-                autoplayHoverPause: true,
-                startPosition: 'URLHash'
-            });
+
         })
     </script>
 </body>

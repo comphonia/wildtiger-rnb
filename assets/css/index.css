@@ -12,15 +12,18 @@
     src: url(../Hipster/Hipster.otf);
 }
 
+a,
 a:hover {
     text-decoration: none;
+    color: inherit;
 }
+
 
 html,
 body {
     width: 100%;
     height: auto;
-    color: whitesmoke;
+    color: #333;
     font-size: 1em;
     scroll-behavior: smooth;
 }
@@ -49,6 +52,27 @@ body {
     background-size: cover;
 }
 
+.f08 {
+    font-size: 0.8em !important;
+}
+
+.f1 {
+    font-size: 1em !important;
+}
+.f1-2 {
+    font-size: 1.2em !important;
+}
+.f1-5 {
+    font-size: 1.5em !important;
+}
+
+.f2 {
+    font-size: 2em !important;
+}
+
+.f3 {
+    font-size: 3em !important;
+}
 
 /*
 specialty {
@@ -82,7 +106,7 @@ specialty {
     background-position: center;
     background-size: cover;
     /*    background-repeat: no-repeat;*/
-    padding: 130px  150px 0 150px;
+    padding: 130px 150px 0 150px;
     position: relative;
 }
 
@@ -262,8 +286,11 @@ specialty {
 }
 
 .specialty-banner {
+    color: whitesmoke;
+    font-family: 'Satisfy', cursive;
+    text-shadow: 2px 2px #000;
     text-transform: uppercase;
-    font-size: 3em;
+    font-size: 4em;
     height: 500px;
     background-image: url(../images/buffet-business-counter-776538.jpg);
     width: 100%;
@@ -312,6 +339,7 @@ specialty {
 
 .menu-item {
     user-select: none;
+    padding: 0;
 }
 
 .menu-item:hover {
@@ -340,8 +368,9 @@ specialty {
 /* menu sign */
 
 .custommenu {
+    text-transform: uppercase;
     font-family: 'Satisfy', cursive;
-    font-size: 5rem;
+    font-size: 3rem;
     font-weight: 200;
     color: #110e0e;
 }
@@ -422,79 +451,95 @@ h3 {
 
 /*Scroll Mouse*/
 .scroll-downs {
-  position: absolute;
-  top: 550px;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  
-  width :34px;
-  height: 55px;
+    position: absolute;
+    top: 550px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+
+    width: 34px;
+    height: 55px;
 }
+
 .mousey {
-  width: 2px;
-  padding: 8px 13px;
-  height: 35px;
-  border: 2px solid #555;
-  border-radius: 25px;
-  opacity: 0.75;
-  box-sizing: content-box;
+    width: 2px;
+    padding: 8px 13px;
+    height: 35px;
+    border: 2px solid #555;
+    border-radius: 25px;
+    opacity: 0.75;
+    box-sizing: content-box;
 }
+
 .scroller {
-  width: 3px;
-  height: 10px;
-  border-radius: 25%;
-  background-color: #555;
-  animation-name: scroll;
-  animation-duration: 2.2s;
-  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
-  animation-iteration-count: infinite;
+    width: 3px;
+    height: 10px;
+    border-radius: 25%;
+    background-color: #555;
+    animation-name: scroll;
+    animation-duration: 2.2s;
+    animation-timing-function: cubic-bezier(.15, .41, .69, .94);
+    animation-iteration-count: infinite;
 }
+
 @keyframes scroll {
-  0% { opacity: 0; }
-  10% { transform: translateY(0); opacity: 1; }
-  100% { transform: translateY(15px); opacity: 0;}
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(15px);
+        opacity: 0;
+    }
 }
 
 /*Back to Top Button*/
 #back-top {
-  display: inline-block;
-  background-color: #FF9800;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  border-radius: 4px;
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  transition: background-color .3s, 
-    opacity .5s, visibility .5s;
-  opacity: 0;
-  visibility: hidden;
-  z-index: 1000;
-      font-weight: normal;
-  font-style: normal;
-  font-size: 1.6em;
-  line-height: 45px;
-  color: #fff;
+    display: inline-block;
+    background-color: #FF9800;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s,
+        opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 12;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.6em;
+    line-height: 45px;
+    color: #fff;
 }
 
 #back-top:hover {
-  cursor: pointer;
-  background-color: #FF7800;
+    cursor: pointer;
+    background-color: #FF7800;
 }
+
 #back-top:active {
-  background-color: #FF7800;
+    background-color: #FF7800;
 }
+
 #back-top.show {
-  opacity: 0.5;
-  visibility: visible;
+    opacity: 0.5;
+    visibility: visible;
 }
+
 @media (min-width: 500px) {
-  #back-top {
-    margin: 30px;
-  }
+    #back-top {
+        margin: 30px;
+    }
 }
 
 
@@ -532,6 +577,7 @@ h3 {
     }
 
     .specialty-banner {
+        font-size: 3em;
         padding: 50px;
         margin-top: -13%;
     }
@@ -560,8 +606,10 @@ h3 {
         background-color: #F5F3F0;
         background-image: url('');
     }
-    
-    .underlay{display: none;}
+
+    .underlay {
+        display: none;
+    }
 
 
     .sp-container,
@@ -591,9 +639,129 @@ h3 {
     }
 }
 
-@media only screen and (max-width: 602px) {
+@media only screen and (max-width: 571px) {
     #menu-area {
         position: relative;
         top: 240px;
+    }
+
+    footer {
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .main_header {
+        font-size: 2em;
+    }
+
+    .main_sub {
+        font-size: 0.8em;
+    }
+}
+
+
+/*Modal*/
+.modal {
+    /* This way it could be display flex or grid or whatever also. */
+    display: block;
+
+
+    vertical-align: middle;
+    overflow-y: hidden;
+
+    width: 540px;
+  
+
+    height: 540px;
+
+
+    position: fixed;
+
+    z-index: 100;
+
+    left: 50%;
+    top: 50%;
+
+    /* Use this for centering if unknown width/height */
+    transform: translate(-50%, -50%);
+
+    border-radius: 5px;
+
+    background: white;
+    box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.3);
+     transition: .3s ease-in-out;
+}
+
+.closed {
+    display: none;
+}
+
+.modal-open{}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.modal-guts {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    padding: 40px;
+}
+
+.modal-image {
+    border: solid 1px #c5c5c5;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.img-fit {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/*Media Queries*/
+
+@media only screen and (max-width: 600px) {
+
+    /*Modal*/
+    .modal {
+        width: 400px;
+        max-width: 90%;
+        height: 500px;
+        max-height: 90%;
+    }
+
+    .modal-guts {
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+
+    /*Modal*/
+    .modal {
+        width: 350px;
+        max-width: 90%;
+        height: 500px;
+        max-height: 90%;
+    }
+
+    .modal-guts {
+        padding: 20px;
     }
 }
