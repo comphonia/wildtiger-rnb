@@ -20,7 +20,7 @@
 <body class="body-bg">
     <div class="underlay"></div>
 
-    <a id="back-top"><i class="fas fa-chevron-up"></i></a>
+    <a id="back-top" href="#"><i class="fas fa-chevron-up"></i></a>
     <!------------------------- Nav Bar------------- -->
     <nav class="navbar navbar-expand-lg navbar-dark  p-3 px-5">
         <a class="navbar-brand text-warning" href="#">Restaurant &amp; Bar</a>
@@ -120,7 +120,7 @@
                             <div class="specialty-overlay-container">
                                 <img src="assets/images/sushi.jpg" class="specialty-img">
                             </div>
-                            <div class="row p-0">
+                            <div class="row specialty">
                                 <div class="col-lg-6 text-center specialty-desc">
                                     <div class="h4 specialty-title">Sushi</div>
                                     <div class="my-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere,
@@ -136,7 +136,7 @@
                             <div class="specialty-overlay-container">
                                 <img src="assets/images/pasta_sauce_greens.jpg" class="specialty-img">
                             </div>
-                            <div class="row" id="">
+                            <div class="row specialty" id="">
                                 <div class="col-lg-6 text-center specialty-desc">
                                     <div class="h4 specialty-title">Pasta &amp; Sauce</div>
                                     <div class="my-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere,
@@ -154,7 +154,7 @@
                             <div class="specialty-overlay-container">
                                 <img src="assets/images/pasta_sauce_greens.jpg" class="specialty-img">
                             </div>
-                            <div class="row">
+                            <div class="row specialty">
                                 <div class="col-lg-6 text-center specialty-desc order-2">
                                     <div class="h4 specialty-title">Pasta &amp; Sauce</div>
                                     <div class="my-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere,
@@ -170,7 +170,7 @@
                             <div class="specialty-overlay-container">
                                 <img src="assets/images/sushi.jpg" class="specialty-img">
                             </div>
-                            <div class="row " id="">
+                            <div class="row specialty " id="">
                                 <div class="col-lg-6 text-center specialty-desc order-2">
                                     <div class="h4 specialty-title">Sushi</div>
                                     <div class="my-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere,
@@ -373,6 +373,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="assets/js/libs/smooth-scroll.polyfills.min.js"></script>
     <script src="assets/js/proparse.js"></script>
     <script src="assets/js/libs/owl.carousel.min.js"></script>
     <script src="assets/js/functionality.js"></script>
@@ -381,6 +382,11 @@
         $(document).ready(function() {
 
         })
+
+        //init smoooth scroll
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            easing: 'easeInOutCubic'
+        });
     </script>
 </body>
 

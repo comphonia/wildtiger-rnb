@@ -73,7 +73,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         } else {
             if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
                 $isError = false;
-                echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
+               // echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
             } else {
                 $isError = true;
                 $error = "Sorry, there was an error uploading your file.";
@@ -86,6 +86,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
         $_SESSION["isError"] = $isError;
         $_SESSION["errorMessage"] = $error;
-        header("Location: http://localhost/wildtiger-rnb/admin/index.php");
+        header("Location: https://comphonia.com/playground/wildtiger-rnb/admin/index.php");
 }
 ?>
