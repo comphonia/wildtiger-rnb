@@ -86,6 +86,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
         $_SESSION["isError"] = $isError;
         $_SESSION["errorMessage"] = $error;
-        header("Location: https://comphonia.com/playground/wildtiger-rnb/admin/index.php");
+        header("Location: https://localhost/wildtiger-rnb/admin/createItem.php");
 }
 ?>
