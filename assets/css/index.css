@@ -22,7 +22,7 @@ html, body {
     height: auto;
     color: #333;
     font-size: 1em;
-    scroll-behavior: smooth;
+/*    scroll-behavior: smooth;*/
 }
 
 .main_header {
@@ -236,13 +236,11 @@ specialty {
     transition: .3s ease-in-out;
 }
 
-.sp-img:hover, .res-img:hover {
+.reservation:hover > .res-img , .specialty-card:hover > .specialty .sp-img{
     opacity: 0.7;
 }
 
-.specialty-desc:hover+.sp-img, .reservation-desc:hover+.res-img {
-    opacity: 0.7;
-}
+
 
 .specialty-title {
     text-transform: capitalize;
@@ -788,53 +786,3 @@ span::before, span::after {
 .btn-1:hover span::before, .btn-1:hover span::after {
     transition-delay: 0.2s;
 }
-
-
-
-/* sdasd */
-.btn-11 {
-    position: relative;
-    $btn-color: random-color($max:200);
-    $btn-color-dark: shade($btn-color, 40%);
-    color: tint($btn-color);
-    
-    &:before,
-    &:after {
-      @include absolute(50%);
-      content: '';
-      @include size(20px);
-      background-color: $btn-color;
-      border-radius: 50%;
-    }
-    
-    &:before {
-      left: -20px;
-      transform: translate(-50%, -50%);
-      // animation: criss-cross-left 0.8s reverse;
-    }
-    
-    &:after {
-      right: -20px;
-      transform: translate(50%, -50%);
-      // animation: criss-cross-right 0.8s reverse;
-    }
-    
-    &:hover {
-      color: tint($btn-color, 75%);
-  
-      &:before,
-      &:after {
-        // @include size($btn-width);
-      }
-      
-      &:before {
-        animation: criss-cross-left 0.8s both;
-        animation-direction: alternate;
-      }
-      
-      &:after {
-        animation: criss-cross-right 0.8s both;
-        animation-direction: alternate;
-      }
-    }
-  }

@@ -14,9 +14,9 @@ var desserts = "";
 
 
 //Grab Data Stuff
-$.get("http://localhost/wildtiger-rnb/admin/getData.php", function (data) {
+$.get("https://comphonia.com/playground/wildtiger-rnb/admin/getData.php", function (data) {
     menuData = JSON.parse(data);
-    console.log(menuData);
+   // console.log(menuData);
     createItems(menuData);
 }).fail(function () {
     //alert('could not get data')
@@ -25,7 +25,7 @@ $.get("http://localhost/wildtiger-rnb/admin/getData.php", function (data) {
 //Sort data and add to DOM
 function createItems(data) {
     for (var i in data) {
-     
+
 
         if (data[i].category === "appetizers") {
             appetizers += DOMObj(data[i]);
@@ -49,6 +49,8 @@ function createItems(data) {
     $('#specials').append(specials);
     $('#drinks').append(drinks);
     $('#desserts').append(desserts);
+    
+    bindModal();
 }
 
 function DOMObj(data) {
@@ -80,10 +82,10 @@ function parseMenuString(str, type) {
 
 //dynamically update modal 
 function setModal(el) {
-    console.log(el.id);
+  //  console.log(el.id);
     let elId = el.id;
     let id = parseInt($('#' + elId + '>.item-id').html());
-    console.log(id)
+   //console.log(id)
     let data = menuData[id - 1];
     $('#modal-choice').html();
     $('#m-name').html(data["name"]);
@@ -91,4 +93,34 @@ function setModal(el) {
     $('#m-desc').html(data["description"])
     $('#m-img').attr("src", "admin/uploads/" + data["image"]);
 
+}
+
+
+//Modal
+var body = document.querySelector("body");
+var modal = document.querySelector("#modal");
+var modalOverlay = document.querySelector("#modal-overlay");
+var closeButton = document.querySelector("#close-button");
+
+
+// toggleModal();
+
+function toggleModal() {
+    modal.classList.toggle("closed");
+    modalOverlay.classList.toggle("closed");
+    //   body.classList.toggle("modal-open");
+}
+
+closeButton.addEventListener("click", () => toggleModal());
+
+modalOverlay.addEventListener("click", () => toggleModal());
+
+function bindModal(){
+    var menuItems = document.querySelectorAll(".menu-item");
+    for (let i = 0; i < menuItems.length; i++) {
+    menuItems[i].addEventListener("click", function () {
+        setModal(this);
+        toggleModal();
+    });
+}
 }
