@@ -14,12 +14,16 @@ var desserts = "";
 
 
 //Grab Data Stuff
-$.get("https://comphonia.com/playground/wildtiger-rnb/admin/getData.php", function (data) {
-    menuData = JSON.parse(data);
-   // console.log(menuData);
-    createItems(menuData);
-}).fail(function () {
-    //alert('could not get data')
+$.ajax({
+    url: "https://comphonia.com/playground/wildtiger-rnb/admin/getData.php",
+    type: 'GET',
+    crossDomain: true,
+    success: function (data) {
+        menuData = JSON.parse(data);
+        // console.log(menuData);
+        createItems(menuData);
+    },
+    cache: false
 });
 
 //Sort data and add to DOM
@@ -49,7 +53,7 @@ function createItems(data) {
     $('#specials').append(specials);
     $('#drinks').append(drinks);
     $('#desserts').append(desserts);
-    
+
     bindModal();
 }
 
@@ -82,10 +86,10 @@ function parseMenuString(str, type) {
 
 //dynamically update modal 
 function setModal(el) {
-  //  console.log(el.id);
+    //  console.log(el.id);
     let elId = el.id;
     let id = parseInt($('#' + elId + '>.item-id').html());
-   //console.log(id)
+    //console.log(id)
     let data = menuData[id - 1];
     $('#modal-choice').html();
     $('#m-name').html(data["name"]);
@@ -115,12 +119,12 @@ closeButton.addEventListener("click", () => toggleModal());
 
 modalOverlay.addEventListener("click", () => toggleModal());
 
-function bindModal(){
+function bindModal() {
     var menuItems = document.querySelectorAll(".menu-item");
     for (let i = 0; i < menuItems.length; i++) {
-    menuItems[i].addEventListener("click", function () {
-        setModal(this);
-        toggleModal();
-    });
-}
+        menuItems[i].addEventListener("click", function () {
+            setModal(this);
+            toggleModal();
+        });
+    }
 }
