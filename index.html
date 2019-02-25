@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="loadbody">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
@@ -14,12 +14,35 @@
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
     <link rel="stylesheet" href="animate.css-master/animate.css" />
     <link rel="stylesheet" href="assets/css/index.css" />
-    <title>Hello, world!</title>
+    <link rel="stylesheet" href="assets/css/loader.css">
+
+    <title>Wild Tiger Restaurant &amp; Bar</title>
 </head>
 
-<body class="body-bg">
-    <div class="underlay"></div>
+<body class="body-bg ">
+    <div class="loader">
+        <div class="loader-guts">
+            <h1>Loading...</h1>
+            <div id="cooking">
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div id="area">
+                    <div id="sides-loader">
+                        <div id="pan"></div>
+                        <div id="handle"></div>
+                    </div>
+                    <div id="pancake">
+                        <div id="pastry"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <div class="underlay"></div>
     <a id="back-top" href="#"><i class="fas fa-chevron-up"></i></a>
     <!------------------------- Nav Bar------------- -->
     <nav class="navbar navbar-expand-lg navbar-dark  p-3 px-5">
@@ -53,7 +76,8 @@
                 <a href="#web">
                     <div type="" class="centerbtn  p-3 mt-1  btn-1" style="text-shadow: 1px 1px rgba(0,0,24,0.5)">
                         <span>THAI RESTAURANT AND BAR </span>
-                    </div></a>
+                    </div>
+                </a>
             </div>
             <a class="scroll-downs" href="#about-area">
                 <div class="mousey">
@@ -66,7 +90,7 @@
             <!--Reservation Area-->
             <div class=" res-container px-4">
                 <section id="reservation-area">
-                    <div class="row reservation wow fadeInLeft">
+                    <div class="row reservation wow fadeInLeft slow">
                         <div class="col-lg-4 p-3 my-3 reservation-desc">
                             <h2 class="text-center sal-header">Reservation</h2>
                             <p class="text-center">
@@ -82,7 +106,7 @@
                         </div>
                     </div>
 
-                    <div class="row reservation wow fadeInRight">
+                    <div class="row reservation wow fadeInRight slow">
                         <div class="col-lg-8 my-5 order-2 reservation-desc">
                             <h2 class="text-center sal-header">About</h2>
                             <p class="text-center">
@@ -110,7 +134,7 @@
             <div class="sp-container  px-4">
                 <div id="specialty-area">
                     <div class="row">
-                        <div class="col-lg-6 specialty-card p-0 wow slideInLeft">
+                        <div class="col-lg-6 specialty-card p-0 wow slideInLeft slow">
                             <div class="specialty-overlay-container">
                                 <img src="assets/images/sushi.jpg" class="specialty-img" />
                             </div>
@@ -128,7 +152,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 specialty-card p-0 wow slideInRight">
+                        <div class="col-lg-6 specialty-card p-0 wow slideInRight slow">
                             <div class="specialty-overlay-container">
                                 <img src="assets/images/pasta_sauce_greens.jpg" class="specialty-img" />
                             </div>

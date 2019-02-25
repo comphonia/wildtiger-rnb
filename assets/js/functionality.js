@@ -1,3 +1,10 @@
+//Preloader
+$(window).on('load',function(){
+ $('.loader .loader-guts').delay(900).fadeOut(1500, function(){
+    $('.loader').fadeOut(900);
+     $('html').removeClass('loadbody');
+ });
+});
 
 // Scroll to top button
 var btn = $('#back-top');
@@ -63,7 +70,7 @@ var wow = new WOW(
     {
         boxClass: 'wow',      // animated element css class (default is wow)
         animateClass: 'animated', // animation css class (default is animated)
-        offset: 0,          // distance to the element when triggering the animation (default is 0)
+        offset: 100,          // distance to the element when triggering the animation (default is 0)
         mobile: true,       // trigger animations on mobile devices (default is true)
         live: true,       // act on asynchronously loaded content (default is true)
         callback: function (box) {
