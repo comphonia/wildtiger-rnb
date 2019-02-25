@@ -1,0 +1,40 @@
+/* INSERTING THE FONT STYLES */
+
+@font-face {
+    font-family: Salamander;
+    src: url(Salamander/Salamander.woff);
+}
+
+@font-face {
+    font-family: Hipster;
+    src: url(Hipster/Hipster.otf);
+}
+
+.sal-header {
+    font-family: Hipster;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.btn {
+    border-radius: unset;
+    color: hsla(22, 79%, 53%, 0.451);
+    font-weight: bold;
+    letter-spacing: 0.09rem;
+    border-color: #aca895;
+    border: 2px solid;
+    margin-top: 1rem;
+}
+
+.res-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+/*    border-color: #aca895;*/
+}
+
+.fit-bottom{object-position: bottom;}
+
+.reservation {
+    height: 300px;
+}

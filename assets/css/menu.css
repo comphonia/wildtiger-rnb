@@ -1,0 +1,63 @@
+/* INSERTING THE FONT STYLES */
+
+@font-face {
+    font-family: Salamander;
+    src: url(Salamander/Salamander.woff);
+}
+
+@font-face {
+    font-family: Hipster;
+    src: url(Hipster/Hipster.otf);
+}
+
+.money {
+    font-family: Salamander;
+    font-size: 3.5rem;
+    margin-left: 0;
+    margin-right: 0;
+    color: rgb(212, 214, 64);
+}
+
+.col-1 {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;
+}
+
+.item {
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 2px;
+    font-size: 1.3rem;
+}
+
+/* Paragraph tag  */
+
+.itemp {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 0px;
+    color: #a39f97a4
+}
+
+/* menu sign */
+
+.custommenu {
+    font-family: 'Satisfy', cursive;
+    font-size: 5rem;
+    font-weight: 200;
+    color: #110e0e;
+}
+
+.customp {
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: hsl(0, 2%, 74%);
+    padding: 40px;
+}
+
+.custommenu:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 10%;
+    border-bottom: 3px solid rgb(180, 169, 110);
+}
