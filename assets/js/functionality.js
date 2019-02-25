@@ -1,12 +1,13 @@
-// Scroll to top button
-var btn = $("#back-top");
 
-$(window).scroll(function() {
-  if ($(window).scrollTop() > 300) {
-    btn.addClass("show");
-  } else {
-    btn.removeClass("show");
-  }
+// Scroll to top button
+var btn = $('#back-top');
+
+$(window).scroll(function () {
+    if ($(window).scrollTop() > 300) {
+        btn.addClass('show');
+    } else {
+        btn.removeClass('show');
+    }
 });
 
 /*     btn.on('click', function (e) {
@@ -17,16 +18,16 @@ $(window).scroll(function() {
     }); */
 
 // Owl Carousel
-$(".owl-carousel").owlCarousel({
-  items: 1,
-  loop: false,
-  center: true,
-  margin: 12,
-  URLhashListener: true,
-  autoplay: false,
-  startPosition: "URLHash",
-  touchDrag: false,
-  mouseDrag: false
+$('.owl-carousel').owlCarousel({
+    items: 1,
+    loop: false,
+    center: true,
+    margin: 12,
+    URLhashListener: true,
+    autoplay: false,
+    startPosition: 'URLHash',
+    touchDrag: false,
+    mouseDrag: false
 });
 
 //Modal
@@ -39,9 +40,9 @@ var menuItems = document.querySelectorAll(".menu-item");
 // toggleModal();
 
 function toggleModal() {
-  modal.classList.toggle("closed");
-  modalOverlay.classList.toggle("closed");
-  //   body.classList.toggle("modal-open");
+    modal.classList.toggle("closed");
+    modalOverlay.classList.toggle("closed");
+    //   body.classList.toggle("modal-open");
 }
 
 closeButton.addEventListener("click", () => toggleModal());
@@ -49,25 +50,28 @@ closeButton.addEventListener("click", () => toggleModal());
 modalOverlay.addEventListener("click", () => toggleModal());
 
 for (let i = 0; i < menuItems.length; i++) {
-  menuItems[i].addEventListener("click", function() {
-    toggleModal();
-    setModal(this);
-  });
+    menuItems[i].addEventListener("click", function () {
+        toggleModal();
+        setModal(this);
+    });
 }
+
 
 // Aniamtion
 
-var wow = new WOW({
-  boxClass: "wow", // animated element css class (default is wow)
-  animateClass: "animated", // animation css class (default is animated)
-  offset: 150, // distance to the element when triggering the animation (default is 0)
-  mobile: true, // trigger animations on mobile devices (default is true)
-  live: true, // act on asynchronously loaded content (default is true)
-  callback: function(box) {
-    // the callback is fired every time an animation is started
-    // the argument that is passed in is the DOM node being animated
-  },
-  scrollContainer: null, // optional scroll container selector, otherwise use window,
-  resetAnimation: true // reset animation on end (default is true)
-});
+var wow = new WOW(
+    {
+        boxClass: 'wow',      // animated element css class (default is wow)
+        animateClass: 'animated', // animation css class (default is animated)
+        offset: 0,          // distance to the element when triggering the animation (default is 0)
+        mobile: true,       // trigger animations on mobile devices (default is true)
+        live: true,       // act on asynchronously loaded content (default is true)
+        callback: function (box) {
+            // the callback is fired every time an animation is started
+            // the argument that is passed in is the DOM node being animated
+        },
+        scrollContainer: null,    // optional scroll container selector, otherwise use window,
+        resetAnimation: true,     // reset animation on end (default is true)
+    }
+);
 wow.init();
