@@ -949,7 +949,7 @@ footer .footer-left {
 	width: 100%;
 	display: block;
 	background-color: #d5dddb;
-	padding: 40px 90px;
+	padding: 40px auto;
 }
 footer .footer-left .footer-logo {
 	width: 100%;
