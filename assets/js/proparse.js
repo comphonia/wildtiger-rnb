@@ -58,7 +58,7 @@ function createItems(data) {
 }
 
 function DOMObj(data) {
-    return `<div class="col-md-6">
+    return `<div class="col-md-6 wow slideInUp">
                 <div class="row">
                     <div class="col-10 menu-item p-0" id="item-${data.id}">
                         <span class="float-right  money p-0" style="background: white">$${data.price}</span>
