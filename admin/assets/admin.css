@@ -6,7 +6,7 @@
 body {
     background-image: url('notebook-dark.png');
     background-color: whitesmoke;
-    font-family:cursive;
+   font-family: 'Open Sans', sans-serif;
 }
 
 a:hover,a {
@@ -45,9 +45,21 @@ a:hover,a {
 .sig-header{ font-family: sig; font-weight: 600; font-size: 2em}
 .sig-footer{ font-family: sig; font-weight: 600; font-size: 1.2em}
 .backbtn{text-decoration: line-through; color: #666;}
+
 .form-control{
     background-color: transparent;
     border: solid 1px #666;
+}
+
+.login .form-control{
+   border-radius: 0;
+    border: 0;
+    border-bottom: solid 1px; 
+}
+.login .form-control:enabled,.login .form-control:focus,.login .form-control:active{
+    background-color: transparent;
+    outline: none !important;
+    box-shadow: none;
 }
 
 .mainbtn {
