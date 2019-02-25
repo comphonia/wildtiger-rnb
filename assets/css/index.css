@@ -948,7 +948,7 @@ footer {
 footer .footer-left {
 	width: 100%;
 	display: block;
-	background-color: #d5dddb;
+	background-color: rgb(255, 229, 115);
 	padding: 40px auto;
 }
 footer .footer-left .footer-logo {
