@@ -14,13 +14,11 @@ var desserts = "";
 
 
 //Grab Data Stuff
-$.get("https://comphonia.com/playground/wildtiger-rnb/admin/getData.php", function (data) {
+$.ajax({url:"https://comphonia.com/playground/wildtiger-rnb/admin/getData.php",success: function (data) {
     menuData = JSON.parse(data);
    // console.log(menuData);
     createItems(menuData);
-}).fail(function () {
-    //alert('could not get data')
-});
+},cache:false});
 
 //Sort data and add to DOM
 function createItems(data) {
