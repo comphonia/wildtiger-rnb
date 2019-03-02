@@ -8,14 +8,16 @@
  - Smooth transitions and animations
  
 ## Future Updates
- [x] Admin Page
+ [x] Admin auth
+ [x] Admin Create
+ []  Admin Read, Update, Delete
  [] WAI-ARIA & screen reader friendly page
  [] Render views using react
  
 ## Plugins Used
  - Owl carousel
- - Anime Js
- - Smooth scroll
- - Scroll Reveal
+ - wow JS
+ - animate.css
+ - smooth scroll
  
  

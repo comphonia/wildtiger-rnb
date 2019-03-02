@@ -20,7 +20,7 @@ $.ajax({
     crossDomain: true,
     success: function (data) {
         menuData = JSON.parse(data);
-        // console.log(menuData);
+        console.log(menuData);
         createItems(menuData);
     },
     cache: false
@@ -28,13 +28,50 @@ $.ajax({
 
 //Sort data and add to DOM
 function createItems(data) {
+    var starter = "",
+        soup = "",
+        salad = "",
+        stir_fried = "",
+        noodles = "",
+        noodle_soup = "",
+        curries = "",
+        fried_rice = "";
     for (var i in data) {
-
-
+        let foodtype = data[i].type;
         if (data[i].category === "appetizers") {
-            appetizers += DOMObj(data[i]);
+            switch (foodtype) {
+                case "starter":
+                    starter += DOMObj(data[i]);
+                    break;
+                case "soup":
+                    soup += DOMObj(data[i]);
+                    break;
+                default:
+                    break;
+            }
         } else if (data[i].category === "entrees") {
-            entrees += DOMObj(data[i]);
+            switch (foodtype) {
+                case "stir-fried":
+                    stir_fried += DOMObj(data[i]);
+                    break;
+                case "salad":
+                    salad += DOMObj(data[i]);
+                    break;
+                case "noodles":
+                    noodles += DOMObj(data[i]);
+                    break;
+                case "noodle-soup":
+                    noodle_soup += DOMObj(data[i]);
+                    break;
+                case "curries":
+                    curries += DOMObj(data[i]);
+                    break;
+                case "fried-rice":
+                    fried_rice += DOMObj(data[i]);
+                    break;
+                default:
+                    break;
+            }
         } else if (data[i].category === "sides") {
             sides += DOMObj(data[i]);
         } else if (data[i].category === "specials") {
@@ -47,7 +84,15 @@ function createItems(data) {
 
     }
 
-    $('#appetizers').append(appetizers);
+    $('#starter').append(starter);
+    $('#soup').append(soup);
+    $('#salad').append(salad);
+    $('#stir-fried').append(stir_fried);
+    $('#noodles').append(noodles);
+    $('#noodle-soup').append(noodle_soup);
+    $('#curries').append(curries);
+    $('#fried-rice').append(fried_rice);
+
     $('#entrees').append(entrees);
     $('#sides').append(sides);
     $('#specials').append(specials);
@@ -58,16 +103,16 @@ function createItems(data) {
 }
 
 function DOMObj(data) {
-    return `<div class="col-md-6 wow slideInUp">
+    return (`<div class="col-md-6 wow slideInUp ">
                 <div class="row">
-                    <div class="col-10 menu-item p-0" id="item-${data.id}">
-                        <span class="float-right  money p-0" style="background: white">$${data.price}</span>
+                    <div class="col-11 menu-item p-0" id="item-${data.id}">
+                        <span class="float-right  money mb-2" style="background: white">$${data.price}</span>
                         <h4 class="item">${parseMenuString(data.name,"name")}</h4>
                         <p class="itemp">${parseMenuString(data.description,"desc")}</p>
                         <div class="d-none item-id">${data.id}</div>
                     </div>
                 </div>
-            </div>`;
+            </div>`);
 }
 
 //truncate strings
