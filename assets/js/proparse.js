@@ -95,7 +95,7 @@ function setModal(el) {
     $('#m-name').html(data["name"]);
     $('#m-price').html(data["price"]);
     $('#m-desc').html(data["description"])
-    $('#m-img').attr("src", "admin/uploads/" + data["image"]);
+    $('#m-img').attr("src", "admin/uploads/" + data["image"] + ".jpg");
 
 }
 
