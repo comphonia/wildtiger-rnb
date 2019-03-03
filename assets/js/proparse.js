@@ -14,17 +14,21 @@ var desserts = "";
 
 
 //Grab Data Stuff
-$.ajax({
-    url: "https://comphonia.com/playground/wildtiger-rnb/admin/getData.php",
-    type: 'GET',
-    crossDomain: true,
-    success: function (data) {
-        menuData = JSON.parse(data);
-        console.log(menuData);
-        createItems(menuData);
-    },
-    cache: false
-});
+setTimeout(function () {
+    $.ajax({
+        url: "https://comphonia.com/playground/wildtiger-rnb/admin/getData.php",
+        type: 'GET',
+        crossDomain: true,
+        success: function (data) {
+            menuData = JSON.parse(data);
+            // console.log(menuData);
+            createItems(menuData);
+            initOwl();
+        },
+        cache: false
+    });
+}, 4000);
+
 
 //Sort data and add to DOM
 function createItems(data) {
@@ -103,7 +107,7 @@ function createItems(data) {
 }
 
 function DOMObj(data) {
-    return (`<div class="col-md-6 wow slideInUp ">
+    return (`<div class="col-md-6 wow slideInUp"                >
                 <div class="row">
                     <div class="col-11 menu-item p-0" id="item-${data.id}">
                         <span class="float-right  money mb-2" style="background: white">$${data.price}</span>

@@ -1,7 +1,7 @@
 <?php session_start(); 
 
 if($_SESSION["isAdmin"] == false){
-   header('Location: http://localhost/wildtiger-rnb/admin/index.php');
+   header('Location: http://comphonia.com/playground/wildtiger-rnb/admin/index.php');
 }
 
 ?>
@@ -28,7 +28,7 @@ if($_SESSION["isAdmin"] == false){
         <div class="row">
             <div class="col-12 my-4">
                 <div class="text-center sig-header">WildTiger Admin Page</div>
-                <a href="http://localhost/wildtiger-rnb/admin/index.php" class="backbtn float-left"> Logout</a>
+                <a href="http://comphonia.com/playground/wildtiger-rnb/admin/index.php" class="backbtn float-left"> Logout</a>
                 <a href="../" class="backbtn float-right"> Go to Menu</a>
             </div>
             <div class="col-12">
@@ -58,12 +58,12 @@ if($_SESSION["isAdmin"] == false){
                 <form class="add-form my-3" action="includes/php/uploadHandler.php" method="post" enctype="multipart/form-data" id="">
 
                     <div class="form-group">
-                        <label>Menu Item Name:</label>
+                        <label for="menuItemNameInput">Menu Item Name:</label>
                         <input type="text" name="name" class="form-control" required>
                     </div>
 
                     <div class="form-group">
-                        <label>Item Category:</label>
+                        <label for="itemCategorySelection">Item Category:</label>
                         <select class="form-control" name="category">
                             <option value="1">Appetizers</option>
                             <option value="2">Entrees</option>
@@ -75,7 +75,7 @@ if($_SESSION["isAdmin"] == false){
                     </div>
 
 
-                    <label>Item Image:</label>
+                    <label for="itemImageSelection">Item Image:</label>
                     <div class="file-upload">
                         <div class="image-upload-wrap">
                             <input class="file-upload-input" type="file" name="fileToUpload" onchange="readURL(this);" accept="image/*" />

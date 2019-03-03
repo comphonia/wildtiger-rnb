@@ -85,7 +85,7 @@ function getAllCategories()
     function getAllMenuItems()
     {
         // prepare sql and bind parameters
-        $stmt = $this->conn->prepare("SELECT id,name,type,image,price,description,availability,C.category
+        $stmt = $this->conn->prepare("SELECT M.id,name,type,image,price,description,availability,C.category
 FROM `menu_item` as M
 LEFT JOIN `item_category` as C
 ON M.categoryId = C.id");

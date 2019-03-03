@@ -7,9 +7,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $password = trim(filter_input(INPUT_POST, 'password', FILTER_SANITIZE_STRING));
     if($name == "admin" && $password == "wild104.9"){
         $_SESSION["isAdmin"] = true;
-        header('Location: http://localhost/wildtiger-rnb/admin/createItem.php');
+        header('Location: http://comphonia.com/playground/wildtiger-rnb/admin/createItem.php');
     }
-} else session_destroy();;
+} else session_destroy();
 
 ?>
 
@@ -24,7 +24,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="assets/admin.css">
     <title>Admin | WildTiger</title>
@@ -38,9 +37,11 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <div class="sig-header" style="position: relative; top: -60px">Admin Login <span class="f" style="top: 22px; position: relative; font-size: 0.5em;">beta</span></div>
                 <form class="mt-3" method="post" action="">
                     <div class="form-group">
+                       <label for="usernameInput" class="sr-only">Enter your Username</label>
                         <input type="text" class="form-control" name="name"  placeholder="Enter username">
                     </div>
                     <div class="form-group my-5">
+                       <label for="passwordInput" class="sr-only">Enter your Password</label>
                         <input type="password" class="form-control" name="password" placeholder="Password">
                     </div>
 <!--

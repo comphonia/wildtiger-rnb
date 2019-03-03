@@ -12,8 +12,7 @@
     <!-- Bootstrap CSS -->
     <!-- Comment -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
-    <link href="https://fonts.googleapis.com/css?family=Playball" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"/>
     <link href="https://fonts.googleapis.com/css?family=Satisfy|Staatliches" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
@@ -50,32 +49,34 @@
     <div class="underlay"></div>
     <a id="back-top" href="#"><i class="fas fa-chevron-up"></i></a>
     <!------------------------- Nav Bar------------- -->
-    <nav class="navbar navbar-expand-lg navbar-dark  p-3 px-5">
-        <a class="navbar-brand text-warning" href="#">Restaurant &amp; Bar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto snip1135">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#about-area">ABOUT US</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#menu-area">MENU</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact-area">CONTACT</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-info" href="admin/index.php">ADMIN</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <div class="container-fluid main">
+    <header role="banner">
+        <nav class="navbar navbar-expand-lg navbar-dark  p-3 px-5" role="navigation" aria-label="mainnav">
+            <a class="navbar-brand text-warning" href="#">Restaurant &amp; Bar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto snip1135">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-area">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu-area">MENU</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact-area">CONTACT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-info" href="admin/index.php">ADMIN</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="container-fluid main" role="main">
         <div class="col-12 d-flex align-items-center jumboheader">
             <div class=" mx-auto text-center danger">
                 <h1 class="main_header wow fadeInUp" style="text-shadow: 1px 3px rgba(0,0,24,0.5)">
@@ -96,16 +97,16 @@
             <!--Reservation Area-->
             <div class=" res-container px-4">
                 <section id="reservation-area">
-                    <div class="row reservation wow fadeInLeft slow">
+                    <div class="row text-center reservation wow fadeInLeft slow">
                         <div class="col-lg-4 p-3 my-3 reservation-desc">
-                            <h2 class="text-center sal-header">Reservation</h2>
-                            <p class="text-center">
+                            <h2 class=" sal-header">Reservation</h2>
+                            <p class="">
                                 Call us now to book a table in our resturent. Calls must be in
                                 the sme days as the reservation
                             </p>
-                            <div class="text-center">
-                                <a href="tel:+163105321562" class="btn btn-outline-danger book-btn">BOOK A TABLE</a>
-                            </div>
+
+                            <a href="tel:+163105321562" class="btn btn-outline-danger book-btn" role="button">BOOK A TABLE</a>
+
                         </div>
                         <div class="col-8 p-0 res-img">
                             <img src="assets/images/pexels-photo.jpeg" class="reservation-img" alt="reservation" />
@@ -236,13 +237,13 @@
                         <h1 class="text-center custommenu pt-5">menu</h1>
                         <div class="row mt-5">
                             <div class="col-12 mx-auto d-flex justify-content-center ">
-                                <div class="">
-                                    <a href="#m-appetizers" class="menu-nav findmore btn-1  my-1 mx-1 p-2 active nohover"><span>Appetizers</span></a>
-                                    <a href="#m-entrees" class="menu-nav  findmore btn-1  my-1 mx-1 p-2 "><span>Entrees</span></a>
-                                    <a href="#m-sides" class="menu-nav  findmore btn-1  my-1 mx-1 p-2 "><span>Sides</span></a>
-                                    <a href="#m-specials" class="menu-nav  findmore btn-1  my-1 mx-1 p-2 "><span>Specials</span></a>
-                                    <a href="#m-drinks_desserts" class="menu-nav  findmore btn-1  my-1 mx-1 p-2 "><span>Desserts</span></a>
-                                </div>
+                                <nav role="navigation" aria-label="menunav">
+                                    <a href="#m-appetizers" class="menu-nav findmore btn-1  my-1 mx-1 p-2 active nohover" role="button"><span>Appetizers</span></a>
+                                    <a href="#m-entrees" class="menu-nav findmore btn-1  my-1 mx-1 p-2 " role="button"><span>Entrees</span></a>
+                                    <a href="#m-sides" class="menu-nav indmore btn-1  my-1 mx-1 p-2 " role="button"><span>Sides</span></a>
+                                    <a href="#m-specials" class="menu-nav findmore btn-1  my-1 mx-1 p-2 " role="button"><span>Specials</span></a>
+                                    <a href="#m-drinks_desserts" class="menu-nav findmore btn-1  my-1 mx-1 p-2 " role="button"><span>Desserts</span></a>
+                                </nav>
                             </div>
                         </div>
                         <div class="owl-carousel">
@@ -338,15 +339,15 @@
                 </div>
             </div>
         </div>
-    </div>
+    </main>
 
     <!--Footer-->
-    <footer>
+    <footer role="contentinfo">
         <div class="row mx-0">
             <div class="col-md-12 p-0 col-xs-12 col-md-12">
                 <div class="footer-left">
 
-                    <a href="#"><button class="to-top fas-fachevron">TOP</button></a>
+<!--                    <a href="#"><button class="to-top fas-fachevron">TOP</button></a>-->
 
                     <div class="container">
                         <div class="row">
@@ -390,7 +391,7 @@
                 </div>
             </div>
             <div class="copy-block">Wild Tiger restaurant 2019. All rights reserved</div>
-            <div class="copy-block" style="background-color: #333; color: #e1e1e1">POWERED BY <a href="https://kkpatel911.github.io/Portfolio/" target="_blank" style="color: #fff;">Kishan</a> &amp;<a target="_blank" href="https://comphonia.com/">
+            <div class="copy-block" style="background-color: #333; color: #e1e1e1">POWERED BY <a rel="noreferrer" href="https://kkpatel911.github.io/Portfolio/" target="_blank" style="color: #fff;">Kishan</a> &amp;<a target="_blank" rel="noreferrer" href="https://comphonia.com/">
                     Comphonia</a><br class="d-block d-sm-none" /></div>
         </div>
 
@@ -435,22 +436,7 @@
     <script src="assets/js/functionality.js"></script>
 
     <script>
-        // Animation
 
-        var wow = new WOW({
-            boxClass: 'wow', // animated element css class (default is wow)
-            animateClass: 'animated', // animation css class (default is animated)
-            offset: 100, // distance to the element when triggering the animation (default is 0)
-            mobile: true, // trigger animations on mobile devices (default is true)
-            live: true, // act on asynchronously loaded content (default is true)
-            callback: function(box) {
-                // the callback is fired every time an animation is started
-                // the argument that is passed in is the DOM node being animated
-            },
-            scrollContainer: null, // optional scroll container selector, otherwise use window,
-            resetAnimation: true, // reset animation on end (default is true)
-        });
-        wow.init();
         $(document).ready(function() {});
         //init smoooth scroll
         var scroll = new SmoothScroll('a[href*="#"]', {
