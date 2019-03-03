@@ -1,7 +1,5 @@
 // PROPARSER - Data parser and prop binder.
 
-'use strict'
-
 //Init Variables;
 var menuData = [];
 
