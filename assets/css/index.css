@@ -47,7 +47,7 @@ body {
 
 .jumboheader {
     width: 100%;
-    height: 80vh;
+    height: 82.5vh;
     text-transform: uppercase;
     background-image: url(../images/home.jpg);
     background-attachment: fixed;
@@ -99,7 +99,7 @@ specialty {
 }
 
 .underlay {
-    background-color: rgba(0, 0, 0, 0.5);
+/*    background-color: rgba(0, 0, 0, 0.5);*/
     position: fixed;
     left: 0;
     top: 0;
@@ -108,8 +108,8 @@ specialty {
 
 .body-bg {
     background-color: #666;
-    /*        background-image: url("../images/body-bg2.jpg");*/
-    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    background: url("../images/bg.jpg") no-repeat fixed, linear-gradient(60deg, #29323c 0%, #485563 100%);
+    background-size: cover;
     padding: 130px 150px 0 150px;
     position: relative;
 }
@@ -537,123 +537,7 @@ h3 {
     visibility: visible;
 }
 
-@media (min-width: 500px) {
-    #back-top {
-        margin: 30px;
-    }
-}
 
-/*Media Queries*/
-
-@media only screen and (max-width: 1440px) {
-    .body-bg {
-        padding: 80px;
-    }
-}
-
-@media only screen and (max-width: 1240px) {
-    .body-bg {
-        padding: 50px;
-    }
-}
-
-@media only screen and (max-width: 1199px) {
-    .hide-em {
-        display: none;
-    }
-
-    .scroll-downs {
-        display: none
-    }
-}
-
-@media only screen and (max-width: 991px) {
-    .specialty-title {
-        font-size: 1.5em;
-    }
-
-    .specialty-banner {
-        font-size: 3em;
-        padding: 50px;
-        margin-top: -13%;
-    }
-
-    .specialty-card,
-    .reservation {
-        height: 50%;
-        font-size: 1em;
-        margin-bottom: 5px;
-        border: solid 2px darkred;
-    }
-
-    .specialty-card:hover {
-        color: transparent;
-    }
-
-    .specialty-overlay-container {
-        display: block;
-    }
-
-    .res-container {
-        /*        top: 11%;*/
-    }
-
-    .body-bg {
-        background-color: #f5f3f0;
-        background-image: url("");
-    }
-
-    .underlay {
-        display: none;
-    }
-
-    .sp-container,
-    .res-container {
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    .sp-img,
-    .res-img {
-        display: none;
-    }
-
-    .body-bg {
-        padding: 0px;
-    }
-
-    #menu-area {
-        position: relative;
-        top: 140px;
-    }
-
-    .jumboheader {
-        font-size: em;
-        width: 100%;
-        height: 60vh;
-    }
-}
-
-@media only screen and (max-width: 571px) {
-    #menu-area {
-        position: relative;
-        top: 240px;
-    }
-
-    footer {
-        margin-top: 50px;
-    }
-}
-
-@media only screen and (max-width: 390px) {
-    .main_header {
-        font-size: 2em;
-    }
-
-    .main_sub {
-        font-size: 0.8em;
-    }
-}
 
 /*Modal*/
 
@@ -762,6 +646,7 @@ h3 {
     cursor: pointer;
     margin: 20px 30px;
     background: hsla(0, 0%, 100%, 0.09);
+    user-select: none;
 }
 
 .findmore::before,
@@ -999,4 +884,128 @@ footer .copy-block {
     font-size: 0.9em;
     text-transform: uppercase;
     letter-spacing: 4px;
+}
+
+@media (min-width: 500px) {
+    #back-top {
+        margin: 30px;
+    }
+}
+
+/*Media Queries*/
+
+@media only screen and (max-width: 1440px) {
+    .body-bg {
+        padding: 80px;
+    }
+}
+
+@media only screen and (max-width: 1240px) {
+    .body-bg {
+        padding: 50px;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .hide-em {
+        display: none;
+    }
+
+    .scroll-downs {
+        display: none
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .specialty-title {
+        font-size: 1.5em;
+    }
+
+    .specialty-banner {
+        font-size: 3em;
+        padding: 50px;
+        margin-top: -13%;
+    }
+
+    .specialty-card,
+    .reservation {
+        height: 50%;
+        font-size: 1em;
+        margin-bottom: 5px;
+        border: solid 2px darkred;
+    }
+
+    .specialty-card:hover {
+        color: transparent;
+    }
+
+    .specialty-overlay-container {
+        display: block;
+    }
+
+    .res-container {
+        /*        top: 11%;*/
+    }
+
+    .body-bg {
+        background-color: #f5f3f0;
+        background-image: url("");
+    }
+
+    .underlay {
+        display: none;
+    }
+
+    .sp-container,
+    .res-container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .sp-img,
+    .res-img {
+        display: none;
+    }
+
+    .body-bg {
+        padding: 0px;
+    }
+
+    #menu-area {
+        position: relative;
+        top: 140px;
+    }
+
+    .jumboheader {
+        font-size: em;
+        width: 100%;
+        height: 60vh;
+    }
+    #cooking{width: 50vh !important;}
+  
+}
+
+@media only screen and (max-width: 571px) {
+    #menu-area {
+        position: relative;
+        top: 240px;
+    }
+
+    footer {
+        margin-top: 50px;
+    }
+    
+     #cooking{width: 40vh !important;}
+      .copy-block{font-size: .75em !important}
+
+}
+
+@media only screen and (max-width: 390px) {
+    .main_header {
+        font-size: 2em;
+    }
+
+    .main_sub {
+        font-size: 0.8em;
+    }
 }

@@ -108,7 +108,7 @@ function DOMObj(data) {
     return (`<div class="col-md-6 wow slideInUp"                >
                 <div class="row">
                     <div class="col-11 menu-item p-0" id="item-${data.id}">
-                        <span class="float-right  money mb-2" style="background: white">$${data.price}</span>
+                        <span class="float-right  money mb-2" style="background: white">${getPrice(data.price)}</span>
                         <h4 class="item">${parseMenuString(data.name,"name")}</h4>
                         <p class="itemp">${parseMenuString(data.description,"desc")}</p>
                         <div class="d-none item-id">${data.id}</div>
@@ -131,6 +131,12 @@ function parseMenuString(str, type) {
 
 }
 
+function getPrice(price){
+    if (price == 0){
+        return "";
+    } else return (`$${price}`);
+}
+
 //dynamically update modal 
 function setModal(el) {
     //  console.log(el.id);
@@ -142,7 +148,7 @@ function setModal(el) {
     $('#m-name').html(data["name"]);
     $('#m-price').html(data["price"]);
     $('#m-desc').html(data["description"])
-    $('#m-img').attr("src", "admin/uploads/" + data["image"] + ".jpg");
+    $('#m-img').attr("src", "admin/uploads/" + data["image"]);
 
 }
 

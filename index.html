@@ -12,7 +12,7 @@
     <!-- Bootstrap CSS -->
     <!-- Comment -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css?family=Satisfy|Staatliches" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
@@ -101,8 +101,7 @@
                         <div class="col-lg-4 p-3 my-3 reservation-desc">
                             <h2 class=" sal-header">Reservation</h2>
                             <p class="">
-                                Call us now to book a table in our resturent. Calls must be in
-                                the sme days as the reservation
+                                Call us now to book a table at our restaurant. Calls must been made on the same day as the reservation.
                             </p>
 
                             <a href="tel:+163105321562" class="btn btn-outline-danger book-btn" role="button">BOOK A TABLE</a>
@@ -240,7 +239,7 @@
                                 <nav role="navigation" aria-label="menunav">
                                     <a href="#m-appetizers" class="menu-nav findmore btn-1  my-1 mx-1 p-2 active nohover" role="button"><span>Appetizers</span></a>
                                     <a href="#m-entrees" class="menu-nav findmore btn-1  my-1 mx-1 p-2 " role="button"><span>Entrees</span></a>
-                                    <a href="#m-sides" class="menu-nav indmore btn-1  my-1 mx-1 p-2 " role="button"><span>Sides</span></a>
+                                    <a href="#m-sides" class="menu-nav findmore btn-1  my-1 mx-1 p-2 " role="button"><span>Sides</span></a>
                                     <a href="#m-specials" class="menu-nav findmore btn-1  my-1 mx-1 p-2 " role="button"><span>Specials</span></a>
                                     <a href="#m-drinks_desserts" class="menu-nav findmore btn-1  my-1 mx-1 p-2 " role="button"><span>Desserts</span></a>
                                 </nav>
@@ -342,12 +341,12 @@
     </main>
 
     <!--Footer-->
-    <footer role="contentinfo">
+    <footer role="contentinfo" id="contact-area">
         <div class="row mx-0">
             <div class="col-md-12 p-0 col-xs-12 col-md-12">
                 <div class="footer-left">
 
-<!--                    <a href="#"><button class="to-top fas-fachevron">TOP</button></a>-->
+                    <!--                    <a href="#"><button class="to-top fas-fachevron">TOP</button></a>-->
 
                     <div class="container">
                         <div class="row">
@@ -410,12 +409,12 @@
                     <hr />
                 </div>
                 <div class="modal-image">
-                    <img id="m-img" class="img-fit" src=".." alt="item image preview" />
+                    <img id="m-img" class="img-fit" src="" alt="item image preview" />
                 </div>
 
                 <p class="item my-3 h5 f1-2">
                     Price:
-                    <span class=" float-right money f1-5" id="m-price">$4.50</span>
+                    <span class=" float-right money f1-5">$ <span id="m-price"></span></span>
                 </p>
                 <p class="item my-2 h5 f1-2">Description</p>
                 <p class="card-text itemp" id="m-desc"></p>
@@ -436,7 +435,6 @@
     <script src="assets/js/functionality.min.js"></script>
 
     <script>
-
         $(document).ready(function() {});
         //init smoooth scroll
         var scroll = new SmoothScroll('a[href*="#"]', {
